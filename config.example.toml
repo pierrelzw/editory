@@ -1,0 +1,28 @@
+# Editory Configuration
+# Copy to ~/.config/editory/config.toml (global) or ./editory.toml (project)
+
+[chrome]
+# Chrome profile directory for persistent login sessions
+profile_dir = "~/.editory/chrome-profile"
+# Chrome remote debugging port
+debug_port = 9222
+
+[defaults]
+# Default target platforms (mowen, xiaohongshu, wechat, twitter)
+platforms = ["mowen", "xiaohongshu"]
+# Default author name
+author = "ZHIWEI LI"
+# Skip AI content review by default
+skip_review = false
+# Skip cover image generation by default
+skip_cover = false
+
+[style]
+# Add emojis to Xiaohongshu content
+xiaohongshu_emoji = true
+# Thread numbering style for Twitter: "slash" (1/5), "bracket" ([1]), "none"
+twitter_thread_style = "slash"
+
+[cover]
+# Cover image generator: "none", "dall-e", "midjourney" (future)
+generator = "none"
