@@ -1,0 +1,180 @@
+# My Writing Style
+
+This is a passive skill. It is automatically loaded whenever the user asks to write, polish, continue, rewrite, translate, or otherwise create/modify article content.
+
+## Role & Reader
+
+- I'm an indie developer building AI products. I write about tech, investing, parenting, and personal growth.
+- My readers are peers — tech people, friends, people who share similar interests. Not academic audiences.
+- My tone is like chatting with a friend, not writing a report.
+
+## Style Principles
+
+### 1. Open with a story or conversation
+
+Almost every article starts with a personal anecdote, a conversation, or a concrete scene. Never open with a thesis statement.
+
+Good:
+> 前段时间，和一个小伙伴瞎聊天，聊到了买房。他问我：你买房了么？
+
+> Vibe coding 听起来很美好："不用自己写代码，用语言编程，动动嘴（键盘）就行。"
+
+Bad:
+> 本文将探讨通货膨胀与房产投资的关系。
+
+### 2. Short paragraphs, one idea each
+
+A paragraph is typically 1-3 sentences. Use blank lines between paragraphs. Long blocks of text are forbidden.
+
+### 3. First person, experience-driven
+
+Write from "I" perspective. Personal experience drives the argument. Don't hide behind "we" or passive voice.
+
+Good:
+> 我一直没想着要买房，也因此错过了北京的房价高峰。
+
+Bad:
+> 许多年轻人在面对高房价时选择了观望。
+
+### 4. Strong opinions, clear stance
+
+Don't hedge everything. Take a position. It's okay to be direct.
+
+Good:
+> 先别管 AI 有没有幻觉，我们自己先不要有幻觉。
+
+> 我斗胆劝一劝：可以暂停一下想想。
+
+Bad:
+> 关于这个问题，不同的人可能有不同的看法，需要综合考虑各种因素。
+
+### 5. Cite and quote to support, don't preach
+
+Frequently cite books, podcasts, people, and data to back up points. Include the source naturally.
+
+Good:
+> 我想起了脱不花说的：只要相信孩子，她们其实能做得相当好。
+
+> 根据 JP 摩根的统计，从 1980 年以来，市场上超过 40% 的股票都曾经遭遇毁灭性打击。
+
+Bad:
+> 众所周知，股市是有风险的。
+
+### 6. Use analogies to make abstract ideas concrete
+
+Good:
+> 就像一个厨子，做菜不咸不淡不辣不酸，每道菜都能吃，但你吃不出任何个人特色。
+
+> 进去的是垃圾，出来的也是垃圾。
+
+### 7. Reflective endings, not summaries
+
+End with a question, a thought, or a scene. Never summarize with "in conclusion".
+
+Good:
+> 你有哪些抗通胀的方法？
+
+> 和外甥们斗智斗勇的一天，终于结束。
+
+Bad:
+> 综上所述，写作风格的培养是一个长期的过程。
+
+### 8. Tutorials: give concrete links and images, don't make readers search
+
+When writing tutorials or how-to content, provide exact links, screenshots, and step-by-step details. Never say "search for X" when you can give the URL directly.
+
+Good:
+> 安装和使用参考[教程](https://portal.shadowsocks.au/...)
+
+Bad:
+> 搜索 "US address generator" 生成一个地址即可
+
+### 9. Cut to the conclusion, skip the preamble
+
+Don't write "guiding" sentences that add no information. Lead with the actionable takeaway.
+
+Good:
+> **只有 iPhone / iPad 才能通过 Apple ID 余额订阅。**
+
+Bad:
+> 以下分 iPhone 和 macOS 两条路线，选择你手边的设备操作即可。
+
+### 10. Remove unnecessary intensifiers
+
+Don't use "千万", "非常", "极其" when the sentence works without them.
+
+Good:
+> 不要贪便宜买低价礼品卡！
+
+Bad:
+> 千万不要贪便宜买低价礼品卡！
+
+## Formatting Habits
+
+- Use `**bold**` for key takeaways, not headings
+- Use `——` (em dash) for parenthetical remarks
+- Use `……` for trailing off / lingering tone
+- Use numbered sections (`1.` `2.` `3.`) with bold titles for structure, not heading levels
+- Lists are short and punchy, not verbose
+- **Prefer lists over tables.** Use `- item — description` format instead of markdown tables. Tables are harder to read on mobile and feel overly formal.
+
+## Forbidden List
+
+Expressions and patterns to never use:
+
+**Formulaic openings:**
+- "本文将介绍/探讨/分析……"
+- "在当今社会/在这个时代……"
+- "随着 XX 技术的快速发展……"
+
+**Formulaic transitions:**
+- "首先……其次……最后……" (three-part formula)
+- "接下来让我们看看……"
+- "值得注意的是……"
+- "不可否认的是……"
+
+**Formulaic endings:**
+- "综上所述/总而言之/总之"
+- "让我们拭目以待"
+- "希望本文对你有所帮助"
+
+**Business jargon:**
+- 深耕、赋能、闭环、抓手、落地、打通、对齐、拉通
+- 底层逻辑、顶层设计、第一性原理（unless genuinely discussing physics）
+
+**AI-smell expressions:**
+- "作为一名 XX 领域的从业者/老兵"
+- "不得不说/说实话/有一说一" as openers
+- "非常重要的、极其关键的、至关重要的" (empty emphasis stacking)
+- "然而，需要指出的是……"
+
+**Structural crutches:**
+- "一方面……另一方面……" followed by "因此"
+- Excessive use of "不是……而是……" patterns
+- Parallel sentence structures repeated 3+ times
+
+**Filler and fluff:**
+- "有，但风险不同：" — don't editorialize before a list, just give the list
+- "本教程只给一条最简单的操作路线，从头到尾跟着做就行" — skip meta-descriptions of the article itself
+- Unnecessary context the reader doesn't need (e.g. "一个手机号最多绑定 2 个 Apple ID" when user only needs one)
+
+## Behavior Rules
+
+When generating or editing article content for the user:
+
+1. **Auto-commit after writing:** After writing or editing an article, immediately run:
+   - For new content (draft/translate): `git add <file> && git commit -m "[ai-draft] <filename>"`
+   - For polishing existing content: First `git add <file> && git commit -m "[user-draft] <filename>"` to save the user's original, then after polishing `git add <file> && git commit -m "[ai-polish] <filename>"`
+2. **Always inform the user** that the version has been saved and they can freely edit.
+3. **After the user finishes editing**, remind them: "Run `/iterate-style <file>` to update the writing style based on your edits."
+
+## Reference Samples
+
+- `my_works/samples/how_to_defend_inflation_without_buying_house.md` — long-form argumentative, data-driven
+- `my_works/samples/kids_have_it_tough.md` — parenting essay, quote-heavy, storytelling
+- `my_works/samples/try_take_care_my_nephews.md` — personal narrative, detailed scenes
+- `my_works/samples/illusion_of_AI_or_us.md` — short opinion piece, direct and punchy
+- `my_works/samples/language_bind_thinking.md` — reflective essay, multi-source citations
+- `my_works/samples/autohighlight_online.md` — product announcement, casual tone
+
+<!-- Iteration log is stored separately in skills/my-style-log.md to save tokens -->

@@ -36,6 +36,8 @@ type: article              # "article" (long-form) or "short_post" (short conten
 
 ### 2. AI Content Review & Optimization (unless --skip-review)
 
+**Load `skills/my-style.md`** as the writing style baseline for all content generation and optimization. Follow its commit conventions: save `[user-draft]` before editing, save `[ai-polish]` after.
+
 Read `templates/review-checklist.md` and check each item:
 - [ ] Markdown formatting is correct (no broken links, proper heading hierarchy)
 - [ ] Title is compelling and appropriate for each platform
@@ -111,3 +113,6 @@ Twitter       | Success | https://x.com/...       |
 ```
 
 For browser-automated platforms, include a screenshot of the published content.
+
+After publishing, if the user made manual edits during the review step, remind them:
+"You made edits to the article. Run `/iterate-style <file>` to update your writing style."

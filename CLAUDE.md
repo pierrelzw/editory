@@ -23,7 +23,9 @@ Mowen and Xiaohongshu have dedicated MCP Servers for direct content publishing w
 editory/
 ├── CLAUDE.md                  # This file — project context for Claude
 ├── skills/
-│   └── publish.md             # /publish skill definition
+│   ├── publish.md             # /publish skill definition
+│   ├── my-style.md            # Writing style skill (auto-loaded for all writing tasks)
+│   └── iterate-style.md       # /iterate-style skill (update style from user edits)
 ├── platforms/                  # Per-platform publishing automation guides
 │   ├── mowen.md               # Mowen: MCP tools + browser fallback
 │   ├── xiaohongshu.md         # Xiaohongshu: MCP tools + browser fallback
@@ -36,16 +38,32 @@ editory/
 └── README.md                  # Project documentation
 ```
 
+## Writing Style
+
+**When the user asks to write, polish, continue, rewrite, or translate article content, read `skills/my-style.md` first and follow its rules throughout the task.** This file defines the user's voice, style principles, and forbidden patterns.
+
+After AI writes or polishes content, it auto-commits with `[ai-draft]`, `[user-draft]`, or `[ai-polish]` tags. The user edits freely, then runs `/iterate-style <file>` to extract preferences from the diff and update the style skill. Iteration log is stored in `skills/my-style-log.md` (not loaded during writing).
+
 ## Workflow Overview
 
 ```
 User: /publish article.md --platforms mowen,xiaohongshu
 
 Step 1: Read article — parse Markdown + frontmatter
-Step 2: AI review & optimization (optional, skippable)
+Step 2: AI review & optimization (optional, skippable) — loads my-style.md
 Step 3: Preview — show final versions per platform, await confirmation
 Step 4: Auto-publish — MCP direct call or Chrome DevTools browser automation
 Step 5: Result report — status, links, screenshots per platform
+```
+
+```
+User: /iterate-style article.md
+
+Step 1: Detect scenario (AI draft vs AI polish) from git history
+Step 2: Generate diff between AI version and user's edits
+Step 3: Analyze changes — extract style rules
+Step 4: Update skills/my-style.md — deduplicate, consolidate, check contradictions
+Step 5: Show summary — new rules, reinforced rules, edit rate
 ```
 
 ## Chrome Session Persistence
