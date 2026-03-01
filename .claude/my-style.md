@@ -28,10 +28,12 @@ A paragraph is typically 1-3 sentences. Use blank lines between paragraphs. Long
 
 ### 3. First person, experience-driven
 
-Write from "I" perspective. Personal experience drives the argument. Don't hide behind "we" or passive voice.
+Write from "I" perspective. Personal experience drives the argument. Don't hide behind "we" or passive voice. When presenting a solution, share the journey — mention what you tried before and why it didn't work, not just the final answer.
 
 Good:
 > 我一直没想着要买房，也因此错过了北京的房价高峰。
+
+> 一开始我采用的是软链接的方式，但是每次打开 AGENTS.md 看到首行是 CLAUDE.md，我就不太得劲。今天简单问了一下 AI，找到了一个干净的方案。
 
 Bad:
 > 许多年轻人在面对高房价时选择了观望。
@@ -93,6 +95,11 @@ Bad:
 
 Don't write "guiding" sentences that add no information. Lead with the actionable takeaway. In tutorials, keep code examples minimal and generic — don't fill in opinionated specifics when a placeholder suffices. Let the reader fill in their own details.
 
+For tutorial/how-to articles, add a one-sentence TL;DR as a blockquote (`>`) right after the title, so readers get the answer upfront.
+
+Good:
+> \> 简单来说，把你希望所有 AI 都遵守的规则写在 AGENT.md 里，在 CLAUDE.md 里 @Agent.md，然后加上 Claude 专属的东西，就不用维护两套了。
+
 Good:
 > **只有 iPhone / iPad 才能通过 Apple ID 余额订阅。**
 
@@ -134,7 +141,7 @@ Expressions and patterns to never use:
 - "不可否认的是……"
 
 **Formulaic endings:**
-- "综上所述/总而言之/总之"
+- "综上所述/总而言之/总之/说到底" as summary openers
 - "让我们拭目以待"
 - "希望本文对你有所帮助"
 
