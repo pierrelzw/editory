@@ -1,6 +1,6 @@
 # /iterate-style Skill
 
-Analyze the diff between AI-generated content and user's manual edits, extract writing preferences, and update `skills/my-style.md`.
+Analyze the diff between AI-generated content and user's manual edits, extract writing preferences, and update `.claude/my-style.md`.
 
 ## Trigger
 
@@ -91,7 +91,7 @@ Summarize findings as concrete, actionable rules. Each rule should have:
 
 ### 4. Update my-style.md
 
-Read current `skills/my-style.md` and merge new rules:
+Read current `.claude/my-style.md` and merge new rules:
 
 **Deduplication:** Compare each new rule against existing rules. If a rule already exists (same meaning, different wording), skip it.
 
@@ -101,7 +101,7 @@ Read current `skills/my-style.md` and merge new rules:
 
 **Contradiction detection:** If a new rule conflicts with an existing rule, present both to the user and ask which to keep.
 
-**Update the iteration log** in `skills/my-style-log.md` (separate file to avoid wasting tokens during normal writing):
+**Update the iteration log** in `.claude/my-style-log.md` (separate file to avoid wasting tokens during normal writing):
 
 | # | Date | Article | Scenario | Edit % | New Rules |
 |---|------|---------|----------|--------|-----------|
@@ -134,7 +134,7 @@ Show the user:
 ### 6. Commit the Update
 
 ```bash
-git add skills/my-style.md skills/my-style-log.md
+git add .claude/my-style.md .claude/my-style-log.md
 git commit -m "[style-update] iterate from <filename>: +N rules, edit rate X%"
 ```
 
