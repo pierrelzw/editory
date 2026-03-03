@@ -11,21 +11,27 @@ Editory is a Claude Code skill (not a standalone CLI tool). After writing a Mark
 | Platform | Primary Method | Fallback |
 |---|---|---|
 | Mowen | `mowen-mcp-server` (direct MCP) | Chrome DevTools MCP (browser) |
-| Xiaohongshu | `rednote-mcp` (direct MCP) | Chrome DevTools MCP (browser) |
+| Xiaohongshu | `rednote-mcp` (planned, not yet configured) | Chrome DevTools MCP (browser) |
 | WeChat Official Account | Chrome DevTools MCP (browser) | — |
 | Twitter/X | Chrome DevTools MCP (browser) | — |
 
-Mowen and Xiaohongshu have dedicated MCP Servers for direct content publishing without browser automation. WeChat and Twitter use Chrome DevTools MCP for browser automation.
+Mowen has a dedicated MCP Server for direct content publishing without browser automation. Xiaohongshu's `rednote-mcp` is planned but not yet configured. WeChat and Twitter use Chrome DevTools MCP for browser automation.
 
 ## Project Structure
 
 ```
 editory/
 ├── CLAUDE.md                  # This file — project context for Claude
-├── skills/
-│   ├── publish.md             # /publish skill definition
+├── .claude/
+│   ├── commands/
+│   │   ├── publish.md         # /publish skill definition
+│   │   └── iterate-style.md   # /iterate-style skill (update style from user edits)
 │   ├── my-style.md            # Writing style skill (auto-loaded for all writing tasks)
-│   └── iterate-style.md       # /iterate-style skill (update style from user edits)
+│   └── my-style-log.md        # Style iteration log (not loaded during writing)
+├── my_works/                   # User's articles and drafts
+├── my-skills/                  # Custom user skills
+├── baoyu-skills/               # Third-party skills (baoyu)
+├── docs/                       # Project documentation files
 ├── platforms/                  # Per-platform publishing automation guides
 │   ├── mowen.md               # Mowen: MCP tools + browser fallback
 │   ├── xiaohongshu.md         # Xiaohongshu: MCP tools + browser fallback
@@ -35,14 +41,15 @@ editory/
 │   ├── review-checklist.md    # AI content review checklist template
 │   └── platform-styles.md    # Per-platform content style guide
 ├── config.example.toml        # Example configuration
-└── README.md                  # Project documentation
+├── README.md                  # Project documentation
+└── README.zh-CN.md            # Chinese documentation
 ```
 
 ## Writing Style
 
-**When the user asks to write, polish, continue, rewrite, or translate article content, read `skills/my-style.md` first and follow its rules throughout the task.** This file defines the user's voice, style principles, and forbidden patterns.
+**When the user asks to write, polish, continue, rewrite, or translate article content, read `.claude/my-style.md` first and follow its rules throughout the task.** This file defines the user's voice, style principles, and forbidden patterns.
 
-After AI writes or polishes content, it auto-commits with `[ai-draft]`, `[user-draft]`, or `[ai-polish]` tags. The user edits freely, then runs `/iterate-style <file>` to extract preferences from the diff and update the style skill. Iteration log is stored in `skills/my-style-log.md` (not loaded during writing).
+Claude auto-commits after writing or polishing content, using tags `[ai-draft]`, `[ai-polish]`, or `[user-draft]`. The user edits freely, then runs `/iterate-style <file>` to extract preferences from the diff and update the style skill. Iteration log is stored in `.claude/my-style-log.md` (not loaded during writing).
 
 ## Workflow Overview
 
@@ -62,7 +69,7 @@ User: /iterate-style article.md
 Step 1: Detect scenario (AI draft vs AI polish) from git history
 Step 2: Generate diff between AI version and user's edits
 Step 3: Analyze changes — extract style rules
-Step 4: Update skills/my-style.md — deduplicate, consolidate, check contradictions
+Step 4: Update .claude/my-style.md — deduplicate, consolidate, check contradictions
 Step 5: Show summary — new rules, reinforced rules, edit rate
 ```
 
@@ -82,6 +89,13 @@ If a session expires, Claude detects the login page via `take_snapshot` and prom
 
 ## Configuration
 
-See `config.example.toml` for all available options. Config can live at:
-- `~/.config/editory/config.toml` (global)
-- `./editory.toml` (project-level)
+Configuration template at `config.example.toml`. Currently not auto-loaded (this is a Markdown-only skill project — no code reads config files).
+
+## Language Rules
+When I write in Chinese:
+1. Plan phase: Output the plan in BOTH Chinese and English. Chinese for my review, English for execution.
+2. Execution phase: Follow the English plan. Use English for code, comments, and commit messages.
+3. Response phase: Summarize results in Chinese.
+
+When I write in English, respond in English. No special formatting rules apply.
+
