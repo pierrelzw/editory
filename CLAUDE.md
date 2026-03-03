@@ -91,11 +91,18 @@ If a session expires, Claude detects the login page via `take_snapshot` and prom
 
 Configuration template at `config.example.toml`. Currently not auto-loaded (this is a Markdown-only skill project — no code reads config files).
 
-## Language Rules
-When I write in Chinese:
-1. Plan phase: Output the plan in BOTH Chinese and English. Chinese for my review, English for execution.
-2. Execution phase: Follow the English plan. Use English for code, comments, and commit messages.
-3. Response phase: Summarize results in Chinese.
+## Code Language Rules
 
-When I write in English, respond in English. No special formatting rules apply.
+All code artifacts MUST be in English:
+- Variable names, function names, class names
+- Code comments and docstrings
+- Commit messages and branch names
+- Error messages and log strings in code
 
+When receiving Chinese instructions, understand the full intent and produce English code. Respond to the user in Chinese (or whatever language they use), but all code output is English.
+
+## Translation Hook (optional, currently disabled)
+
+A translation hook is available at `templates/claude-code-hooks/translate-prompt.sh` that auto-translates Chinese prompts to English via local Ollama. This is **no longer needed** — the Code Language Rules above are sufficient. Claude's native Chinese comprehension is strong enough; a 7B translation model may actually lose technical nuance.
+
+To re-enable if desired, add the hook config back to `.claude/settings.json`.
