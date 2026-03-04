@@ -179,7 +179,6 @@ Expressions and patterns to never use:
 - Unnecessary context the reader doesn't need (e.g. "一个手机号最多绑定 2 个 Apple ID" when user only needs one)
 - Don't over-explain peripheral topics that are already covered in a list — if you listed it, the reader got it
 - "不讲太多道理，直接给你能用的" — meta-descriptions of the article's own approach; just do it, don't announce it
-- Avoid specific thresholds when the point is directional — say "写太长效果打折" not "超过 200 行效果打折", unless the number itself is the point
 
 ## Behavior Rules
 
