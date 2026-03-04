@@ -64,6 +64,14 @@ Bad:
 
 ### 6. Use analogies to make abstract ideas concrete
 
+When introducing a concept, lead with concrete examples or scenarios first, then add an analogy. Never open with an abstract definition.
+
+Good:
+> 如果是代码，一般会写项目用什么语言、什么框架、测试怎么跑……可以理解为：你给一个新同事写的「入职须知」，只不过这个同事每天早上都会失忆。
+
+Bad:
+> 这是你给 Claude 的持久化指令。
+
 Good:
 > 就像一个厨子，做菜不咸不淡不辣不酸，每道菜都能吃，但你吃不出任何个人特色。
 
@@ -93,15 +101,18 @@ Bad:
 
 ### 9. Cut to the conclusion, skip the preamble
 
-Don't write "guiding" sentences that add no information. Lead with the actionable takeaway. In tutorials, keep code examples minimal and generic — don't fill in opinionated specifics when a placeholder suffices. Let the reader fill in their own details.
+Don't write "guiding" sentences that add no information. Lead with the actionable takeaway. In tutorials, keep code examples minimal and generic — use universal commands readers already know (e.g. `ls`, `cat`) over framework-specific ones (e.g. `npm run lint`) unless the article is about that framework. Let the reader fill in their own details.
 
-For tutorial/how-to articles, add a one-sentence TL;DR as a blockquote (`>`) right after the title, so readers get the answer upfront.
+For tutorial/how-to articles, add a short TL;DR as a blockquote (`>`) right after the title. Keep it to one punchy sentence — no commas chaining multiple clauses, no enumerating sub-topics.
+
+Good:
+> \> 一份清单帮你搞清 Claude Code 到底有哪些配置
+
+Bad:
+> \> 一份清单，帮你搞清 Claude Code 到底有哪些配置、放在哪、怎么用、先配什么。
 
 Good:
 > \> 简单来说，把你希望所有 AI 都遵守的规则写在 AGENT.md 里，在 CLAUDE.md 里 @Agent.md，然后加上 Claude 专属的东西，就不用维护两套了。
-
-Good:
-> **只有 iPhone / iPad 才能通过 Apple ID 余额订阅。**
 
 Bad:
 > 以下分 iPhone 和 macOS 两条路线，选择你手边的设备操作即可。
@@ -119,10 +130,11 @@ Bad:
 ## Formatting Habits
 
 - Use `**bold**` for key takeaways, not headings
-- Use `——` (em dash) for parenthetical remarks
+- Use ` —— ` (em dash with spaces) for parenthetical remarks
 - Use `……` for trailing off / lingering tone
 - Use numbered sections (`1.` `2.` `3.`) with bold titles for structure, not heading levels
 - Lists are short and punchy, not verbose
+- Section headings: simple noun phrases preferred. Avoid "先看 X：Y 个 Z 一览" style — just "X 概览" or "X"
 - **Prefer lists over tables.** Use `- item — description` format instead of markdown tables. Tables are harder to read on mobile and feel overly formal.
 
 ## Forbidden List
@@ -166,20 +178,26 @@ Expressions and patterns to never use:
 - "分享出来" / "分享给大家" — the act of publishing already implies sharing
 - Unnecessary context the reader doesn't need (e.g. "一个手机号最多绑定 2 个 Apple ID" when user only needs one)
 - Don't over-explain peripheral topics that are already covered in a list — if you listed it, the reader got it
+- "不讲太多道理，直接给你能用的" — meta-descriptions of the article's own approach; just do it, don't announce it
+- Avoid specific thresholds when the point is directional — say "写太长效果打折" not "超过 200 行效果打折", unless the number itself is the point
 
 ## Behavior Rules
 
 When generating or editing article content for the user:
 
-1. **Auto-commit after writing:** After writing or editing an article, immediately run:
+1. **Fact-check before commit:** If `/fact-check` is available in the current project, run `/fact-check <file>` after finishing writing/editing.
+   This launches an independent subagent to verify all factual claims.
+   Fix any errors found, re-check until passed. Only then proceed to auto-commit.
+   If `/fact-check` is not available, skip this step and proceed directly to auto-commit.
+2. **Auto-commit after writing:** After writing or editing an article, immediately run:
    - For new content (draft/translate): `git add <file> && git commit -m "[ai-draft] <filename>"`
    - For polishing existing content: First `git add <file> && git commit -m "[user-draft] <filename>"` to save the user's original, then after polishing `git add <file> && git commit -m "[ai-polish] <filename>"`
-2. **Always inform the user** that the version has been saved and they can freely edit.
-3. **After the user finishes editing**, remind them: "Run `/iterate-style <file>` to update the writing style based on your edits."
+3. **Always inform the user** that the version has been saved and they can freely edit.
+4. **After the user finishes editing**, remind them: "Run `/iterate-style <file>` to update the writing style based on your edits."
 
 ## Reference Samples
 
-- `my_works/samples/how_to_defend_inflation_without_buying_house.md` — long-form argumentative, data-driven
+- `my_works/samples/defend_inflation_without_buying_house.md` — long-form argumentative, data-driven
 - `my_works/samples/kids_have_it_tough.md` — parenting essay, quote-heavy, storytelling
 - `my_works/samples/try_take_care_my_nephews.md` — personal narrative, detailed scenes
 - `my_works/samples/illusion_of_AI_or_us.md` — short opinion piece, direct and punchy
