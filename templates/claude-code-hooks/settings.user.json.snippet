@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "prompt matches \"^/go(\\\\s|$)\"",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/plan-handoff-ollama.py"
+          }
+        ]
+      }
+    ]
+  }
+}
+
