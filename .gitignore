@@ -2,6 +2,6 @@
 .claude/plans/
 .claude/worktrees/
 .baoyu-skills/
-baoyu-skills/
+baoyu-skills
 *.review.md
 .env
