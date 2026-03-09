@@ -1,0 +1,243 @@
+uid=23_0 RootWebArea "小红书创作服务平台" url="https://creator.xiaohongshu.com/publish/update?id=69aaa3b0000000001a02ab6a&noteType=normal"
+  uid=23_1 StaticText "遇到问题"
+  uid=23_2 StaticText "创作服务平台"
+  uid=23_3 StaticText "李志伟"
+  uid=23_4 main
+    uid=23_5 StaticText "发布笔记"
+    uid=23_6 StaticText "首页"
+    uid=23_7 StaticText "笔记管理"
+    uid=23_8 StaticText "数据看板"
+    uid=23_9 StaticText "活动中心"
+    uid=23_10 StaticText "笔记灵感"
+    uid=23_11 StaticText "创作学院"
+    uid=23_12 StaticText "创作百科"
+    uid=23_13 StaticText "收起侧边栏"
+    uid=23_14 StaticText "图片编辑"
+    uid=23_15 StaticText "5/18"
+    uid=23_16 StaticText "获取封面建议"
+    uid=23_17 StaticText "1"
+    uid=23_18 StaticText "2"
+    uid=23_19 StaticText "3"
+    uid=23_20 StaticText "4"
+    uid=23_21 StaticText "5"
+    uid=23_22 textbox "填写标题会有更多赞哦" value="非程序员 Claude Code 用户必看！怎么用Git"
+    uid=23_23 StaticText "智能标题"
+    uid=23_24 textbox multiline value="一个朋友问我：让 Claude 实现了一个工具，调了 6 版想回到第 3 版，但 CC 告诉我「没有版本记录」，怎么办？
+
+
+
+
+这是用 Claude Code 做项目的新手朋友，很容易踩的坑，还有下面这些类似的：
+
+1️⃣ Claude Code 生成了 v1/v2/v3 的文件， 一周后分不清哪个是哪个了
+
+2️⃣ CLAUDE.md 改着改着，Claude 行为变怪了，但不知道哪一次改坏的
+
+3️⃣ 多人协作，几个人同时更改了一些文件，合并改动简直是灾难
+
+4️⃣ 用 Claude Code 迭代一个月的写作风格，想知道是怎么演进的，但没留过快照
+
+5️⃣ Claude 改了配置我没注意就同意了，几天后才发现有问题，但是不知道它到底改了什么
+
+
+
+
+它们的共同点：没有「存档」。
+
+
+
+
+好消息是，在软件工程领域早就有解决方案了 —— Git 就是你的存档键
+
+
+
+
+其实这个工具很简单，不是程序员才会用的工具。下面是最基础的 6 个命令：
+
+git init → 开启存档（只需要跑一次）
+
+git add + commit → 存一个档（改完就存，养成习惯）
+
+git log → 看看存了哪些档（像翻相册）
+
+git diff → 对比改了什么（Claude 改了啥一目了然）
+
+git checkout → 回到之前的版本（后悔药）
+
+git branch →  开一条新路线试试（不影响主线）
+
+
+
+
+你甚至可以直接让 Claude Code 执行它们。
+
+
+
+
+💡 在 CLAUDE.md 加一条规则，Claude 就能自动帮你存档👇
+
+「项目使用 git 管理，每次完成修改后自动 commit。」
+
+
+
+
+最近，Claude Code 内置了 git worktree，比 git branch 更好用，感兴趣的可以找 Claude 了解。
+
+
+
+
+在使用 Claude Code 初期你踩过哪个坑？评论区见👇
+
+#vibecoding[话题]# #vibecoding大赏[话题]# #AI工具[话题]# #文科生转码[话题]# #ClaudeCode[话题]# #AI编程[话题]# #转码[话题]#
+"
+      uid=23_25 paragraph
+        uid=23_26 StaticText "一个朋友问我：让 Claude 实现了一个工具，调了 6 版想回到第 3 版，但 CC 告诉我「没有版本记录」，怎么办？"
+      uid=23_27 paragraph
+      uid=23_28 paragraph
+        uid=23_29 StaticText "这是用 Claude Code 做项目的新手朋友，很容易踩的坑，还有下面这些类似的："
+      uid=23_30 paragraph
+        uid=23_31 StaticText "1️⃣ Claude Code 生成了 v1/v2/v3 的文件， 一周后分不清哪个是哪个了"
+      uid=23_32 paragraph
+        uid=23_33 StaticText "2️⃣ CLAUDE.md 改着改着，Claude 行为变怪了，但不知道哪一次改坏的"
+      uid=23_34 paragraph
+        uid=23_35 StaticText "3️⃣ 多人协作，几个人同时更改了一些文件，合并改动简直是灾难"
+      uid=23_36 paragraph
+        uid=23_37 StaticText "4️⃣ 用 Claude Code 迭代一个月的写作风格，想知道是怎么演进的，但没留过快照"
+      uid=23_38 paragraph
+        uid=23_39 StaticText "5️⃣ Claude 改了配置我没注意就同意了，几天后才发现有问题，但是不知道它到底改了什么"
+      uid=23_40 paragraph
+      uid=23_41 paragraph
+        uid=23_42 StaticText "它们的共同点：没有「存档」。"
+      uid=23_43 paragraph
+      uid=23_44 paragraph
+        uid=23_45 StaticText "好消息是，在软件工程领域早就有解决方案了 —— Git 就是你的存档键"
+      uid=23_46 paragraph
+      uid=23_47 paragraph
+        uid=23_48 StaticText "其实这个工具很简单，不是程序员才会用的工具。下面是最基础的 6 个命令："
+      uid=23_49 paragraph
+        uid=23_50 StaticText "git init → 开启存档（只需要跑一次）"
+      uid=23_51 paragraph
+        uid=23_52 StaticText "git add + commit → 存一个档（改完就存，养成习惯）"
+      uid=23_53 paragraph
+        uid=23_54 StaticText "git log → 看看存了哪些档（像翻相册）"
+      uid=23_55 paragraph
+        uid=23_56 StaticText "git diff → 对比改了什么（Claude 改了啥一目了然）"
+      uid=23_57 paragraph
+        uid=23_58 StaticText "git checkout → 回到之前的版本（后悔药）"
+      uid=23_59 paragraph
+        uid=23_60 StaticText "git branch →  开一条新路线试试（不影响主线）"
+      uid=23_61 paragraph
+      uid=23_62 paragraph
+        uid=23_63 StaticText "你甚至可以直接让 Claude Code 执行它们。"
+      uid=23_64 paragraph
+      uid=23_65 paragraph
+        uid=23_66 StaticText "💡 在 CLAUDE.md 加一条规则，Claude 就能自动帮你存档👇"
+      uid=23_67 paragraph
+        uid=23_68 StaticText "「项目使用 git 管理，每次完成修改后自动 commit。」"
+      uid=23_69 paragraph
+      uid=23_70 paragraph
+        uid=23_71 StaticText "最近，Claude Code 内置了 git worktree，比 git branch 更好用，感兴趣的可以找 Claude 了解。"
+      uid=23_72 paragraph
+      uid=23_73 paragraph
+        uid=23_74 StaticText "在使用 Claude Code 初期你踩过哪个坑？评论区见👇"
+      uid=23_75 paragraph
+        uid=23_76 StaticText " "
+        uid=23_77 StaticText " "
+        uid=23_78 StaticText " "
+        uid=23_79 StaticText " "
+        uid=23_80 StaticText " "
+        uid=23_81 StaticText " "
+    uid=23_82 StaticText "#开发者选项"
+    uid=23_83 StaticText "#程序员"
+    uid=23_84 StaticText "#个人开发者"
+    uid=23_85 StaticText "#编程"
+    uid=23_86 StaticText "#开发者模式"
+    uid=23_87 StaticText "更多"
+    uid=23_88 button " 话题"
+    uid=23_89 button
+    uid=23_90 button " 用户"
+    uid=23_91 button " 表情"
+    uid=23_92 StaticText "819"
+    uid=23_93 StaticText "/1000"
+    uid=23_94 StaticText "活动话题"
+    uid=23_95 StaticText "更多"
+    uid=23_96 StaticText "小红书原画直出"
+    uid=23_97 StaticText " 添加话题"
+    uid=23_98 StaticText "活动详情 "
+    uid=23_99 StaticText "少东家侠奥会"
+    uid=23_100 StaticText " 添加话题"
+    uid=23_101 StaticText "活动详情 "
+    uid=23_102 StaticText "内容设置"
+    uid=23_103 StaticText "收起"
+    uid=23_104 StaticText "加入合集"
+    uid=23_105 StaticText "汇集系列视频，有利于连续性观看"
+    uid=23_106 StaticText "创建合集"
+    uid=23_107 StaticText "原创声明"
+    uid=23_108 checkbox checked
+    uid=23_109 generic
+      uid=23_110 StaticText "添加内容类型声明"
+    uid=23_111 StaticText "添加组件"
+    uid=23_112 generic
+      uid=23_113 textbox
+      uid=23_114 StaticText "添加地点"
+    uid=23_115 generic
+      uid=23_116 textbox
+      uid=23_117 StaticText "选择群聊"
+    uid=23_118 StaticText "关联直播预告"
+    uid=23_119 StaticText "标记地点或标记朋友"
+    uid=23_120 StaticText "添加路线"
+    uid=23_121 StaticText "选择文件"
+    uid=23_122 StaticText "更多设置"
+    uid=23_123 StaticText "收起"
+    uid=23_124 StaticText "允许合拍"
+    uid=23_125 checkbox checked
+    uid=23_126 StaticText "允许正文复制"
+    uid=23_127 checkbox checked
+    uid=23_128 generic
+      uid=23_129 StaticText "公开可见"
+    uid=23_130 StaticText " "
+    uid=23_131 StaticText "笔记预览"
+    uid=23_132 StaticText "封面预览"
+    uid=23_133 image "头像" url="https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ogmtochg6004a0a72u423d2u892510?imageView2/2/w/80/format/jpg"
+    uid=23_134 StaticText "李志伟"
+    uid=23_135 StaticText "1/5"
+    uid=23_136 StaticText "非程序员 Claude Code 用户必看！怎么用Git"
+    uid=23_137 StaticText "一个朋友问我：让 Claude 实现了一个工具，调了 6 版想回到第 3 版，但 CC 告诉我「没有版本记录」，怎么办？"
+    uid=23_138 StaticText "这是用 Claude Code 做项目的新手朋友，很容易踩的坑，还有下面这些类似的："
+    uid=23_139 StaticText "1️⃣ Claude Code 生成了 v1/v2/v3 的文件， 一周后分不清哪个是哪个了"
+    uid=23_140 StaticText "2️⃣ CLAUDE.md 改着改着，Claude 行为变怪了，但不知道哪一次改坏的"
+    uid=23_141 StaticText "3️⃣ 多人协作，几个人同时更改了一些文件，合并改动简直是灾难"
+    uid=23_142 StaticText "4️⃣ 用 Claude Code 迭代一个月的写作风格，想知道是怎么演进的，但没留过快照"
+    uid=23_143 StaticText "5️⃣ Claude 改了配置我没注意就同意了，几天后才发现有问题，但是不知道它到底改了什么"
+    uid=23_144 StaticText "它们的共同点：没有「存档」。"
+    uid=23_145 StaticText "好消息是，在软件工程领域早就有解决方案了 —— Git 就是你的存档键"
+    uid=23_146 StaticText "其实这个工具很简单，不是程序员才会用的工具。下面是最基础的 6 个命令："
+    uid=23_147 StaticText "git init → 开启存档（只需要跑一次）"
+    uid=23_148 StaticText "git add + commit → 存一个档（改完就存，养成习惯）"
+    uid=23_149 StaticText "git log → 看看存了哪些档（像翻相册）"
+    uid=23_150 StaticText "git diff → 对比改了什么（Claude 改了啥一目了然）"
+    uid=23_151 StaticText "git checkout → 回到之前的版本（后悔药）"
+    uid=23_152 StaticText "git branch →  开一条新路线试试（不影响主线）"
+    uid=23_153 StaticText "你甚至可以直接让 Claude Code 执行它们。"
+    uid=23_154 StaticText "💡 在 CLAUDE.md 加一条规则，Claude 就能自动帮你存档👇"
+    uid=23_155 StaticText "「项目使用 git 管理，每次完成修改后自动 commit。」"
+    uid=23_156 StaticText "最近，Claude Code 内置了 git worktree，比 git branch 更好用，感兴趣的可以找 Claude 了解。"
+    uid=23_157 StaticText "在使用 Claude Code 初期你踩过哪个坑？评论区见👇"
+    uid=23_158 StaticText "#vibecoding"
+    uid=23_159 StaticText " "
+    uid=23_160 StaticText "#vibecoding大赏"
+    uid=23_161 StaticText " "
+    uid=23_162 StaticText "#AI工具"
+    uid=23_163 StaticText " "
+    uid=23_164 StaticText "#文科生转码"
+    uid=23_165 StaticText " "
+    uid=23_166 StaticText "#ClaudeCode"
+    uid=23_167 StaticText " "
+    uid=23_168 StaticText "#AI编程"
+    uid=23_169 StaticText " "
+    uid=23_170 StaticText "#转码"
+    uid=23_171 StaticText "编辑于 "
+    uid=23_172 StaticText "刚刚"
+    uid=23_173 StaticText "  已声明原创"
+    uid=23_174 image "头像" url="https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ogmtochg6004a0a72u423d2u892510?imageView2/2/w/80/format/jpg"
+    uid=23_175 button "发布"

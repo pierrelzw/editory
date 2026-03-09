@@ -1,0 +1,969 @@
+uid=21_0 RootWebArea "小红书创作服务平台" url="https://creator.xiaohongshu.com/publish/update?id=69aaa3b0000000001a02ab6a&noteType=normal"
+  uid=22_0 ignored
+    uid=22_1 generic
+      uid=22_2 generic
+        uid=22_3 generic
+          uid=22_4 generic
+            uid=22_5 ignored
+            uid=22_6 ignored
+              uid=21_1 StaticText "遇到问题"
+                uid=22_7 InlineTextBox "遇"
+                uid=22_7 InlineTextBox "到"
+                uid=22_7 InlineTextBox "问"
+                uid=22_7 InlineTextBox "题"
+          uid=22_8 generic
+            uid=22_9 ignored
+              uid=22_10 generic
+                uid=22_11 ignored
+                  uid=22_12 ignored
+                    uid=22_13 generic
+                      uid=22_14 image
+                      uid=22_15 generic
+                        uid=21_2 StaticText "创作服务平台"
+                          uid=22_7 InlineTextBox "创作服务平台"
+                  uid=22_16 ignored
+                    uid=22_17 generic
+                      uid=22_18 image url="https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ogmtochg6004a0a72u423d2u892510?imageView2/2/w/80/format/jpg"
+                      uid=22_19 ignored
+                        uid=21_3 StaticText "李志伟"
+                          uid=22_7 InlineTextBox "李志伟"
+                      uid=22_20 image url="https://fe-img-qc.xhscdn.com/48fd625e5dfe43f5a44ea81f99668b223802391d"
+              uid=22_21 generic
+                uid=21_4 main
+                  uid=22_22 ignored
+                    uid=22_23 ignored
+                      uid=22_24 generic
+                        uid=22_25 generic
+                          uid=22_26 ignored
+                            uid=22_27 image
+                            uid=22_28 ignored
+                              uid=21_5 StaticText "发布笔记"
+                                uid=22_7 InlineTextBox "发布笔记"
+                            uid=22_29 image
+                      uid=22_30 ignored
+                        uid=22_31 ignored
+                          uid=22_32 generic
+                            uid=22_33 ignored
+                              uid=22_34 ignored
+                                uid=22_35 image
+                            uid=22_36 ignored
+                              uid=21_6 StaticText "首页"
+                                uid=22_7 InlineTextBox "首页"
+                          uid=22_37 generic
+                            uid=22_38 ignored
+                              uid=22_39 ignored
+                                uid=22_40 image
+                            uid=22_41 ignored
+                              uid=21_7 StaticText "笔记管理"
+                                uid=22_7 InlineTextBox "笔记管理"
+                          uid=22_42 ignored
+                            uid=22_43 generic
+                              uid=22_44 ignored
+                                uid=22_45 ignored
+                                  uid=22_46 image
+                              uid=22_47 ignored
+                                uid=21_8 StaticText "数据看板"
+                                  uid=22_7 InlineTextBox "数据看板"
+                              uid=22_48 ignored
+                                uid=22_49 generic
+                                  uid=22_50 image
+                          uid=22_51 generic
+                            uid=22_52 ignored
+                              uid=22_53 ignored
+                                uid=22_54 image
+                            uid=22_55 ignored
+                              uid=21_9 StaticText "活动中心"
+                                uid=22_7 InlineTextBox "活动中心"
+                          uid=22_56 generic
+                            uid=22_57 ignored
+                              uid=22_58 ignored
+                                uid=22_59 image
+                            uid=22_60 ignored
+                              uid=21_10 StaticText "笔记灵感"
+                                uid=22_7 InlineTextBox "笔记灵感"
+                          uid=22_61 generic
+                            uid=22_62 ignored
+                              uid=22_63 ignored
+                                uid=22_64 image
+                            uid=22_65 ignored
+                              uid=21_11 StaticText "创作学院"
+                                uid=22_7 InlineTextBox "创作学院"
+                          uid=22_66 generic
+                            uid=22_67 ignored
+                              uid=22_68 ignored
+                                uid=22_69 image
+                            uid=22_70 ignored
+                              uid=21_12 StaticText "创作百科"
+                                uid=22_7 InlineTextBox "创作百科"
+                        uid=22_71 generic
+                          uid=22_72 generic
+                            uid=22_73 image
+                          uid=22_74 ignored
+                            uid=21_13 StaticText "收起侧边栏"
+                              uid=22_7 InlineTextBox "收起侧边栏"
+                  uid=22_75 generic
+                    uid=22_76 generic
+                      uid=22_77 ignored
+                        uid=22_78 generic
+                          uid=22_79 ignored
+                            uid=22_80 ignored
+                              uid=22_81 ignored
+                                uid=22_82 ignored
+                                uid=22_83 generic
+                                  uid=22_84 ignored
+                                    uid=22_85 generic
+                                      uid=22_86 ignored
+                                        uid=22_87 generic
+                                          uid=22_88 ignored
+                                          uid=22_89 ignored
+                                            uid=22_90 ignored
+                                              uid=22_91 ignored
+                                                uid=22_92 ignored
+                                                  uid=22_93 generic
+                                                    uid=21_14 StaticText "图片编辑"
+                                                      uid=22_7 InlineTextBox "图片编辑"
+                                                  uid=22_94 generic
+                                                    uid=21_15 StaticText "5/18"
+                                                      uid=22_7 InlineTextBox "5/18"
+                                                  uid=22_95 generic
+                                                    uid=22_96 image
+                                                uid=22_97 generic
+                                                  uid=22_98 image
+                                                  uid=22_99 generic
+                                                    uid=21_16 StaticText "获取封面建议"
+                                                      uid=22_7 InlineTextBox "获取封面建议"
+                                              uid=22_100 ignored
+                                                uid=22_101 ignored
+                                                  uid=22_102 ignored
+                                                    uid=22_103 generic
+                                                      uid=22_104 image
+                                                    uid=22_105 generic
+                                                      uid=22_106 generic
+                                                        uid=22_107 generic
+                                                          uid=22_108 ignored
+                                                        uid=22_109 generic
+                                                          uid=21_17 StaticText "1"
+                                                            uid=22_7 InlineTextBox "1"
+                                                        uid=22_110 generic
+                                                    uid=22_111 generic
+                                                      uid=22_112 generic
+                                                        uid=22_113 generic
+                                                          uid=22_114 ignored
+                                                        uid=22_115 generic
+                                                          uid=21_18 StaticText "2"
+                                                            uid=22_7 InlineTextBox "2"
+                                                        uid=22_116 generic
+                                                    uid=22_117 generic
+                                                      uid=22_118 generic
+                                                        uid=22_119 generic
+                                                          uid=22_120 ignored
+                                                        uid=22_121 generic
+                                                          uid=21_19 StaticText "3"
+                                                            uid=22_7 InlineTextBox "3"
+                                                        uid=22_122 generic
+                                                    uid=22_123 generic
+                                                      uid=22_124 generic
+                                                        uid=22_125 generic
+                                                          uid=22_126 ignored
+                                                        uid=22_127 generic
+                                                          uid=21_20 StaticText "4"
+                                                            uid=22_7 InlineTextBox "4"
+                                                        uid=22_128 generic
+                                                    uid=22_129 generic
+                                                      uid=22_130 generic
+                                                        uid=22_131 generic
+                                                          uid=22_132 ignored
+                                                        uid=22_133 generic
+                                                          uid=21_21 StaticText "5"
+                                                            uid=22_7 InlineTextBox "5"
+                                                        uid=22_134 generic
+                                        uid=22_135 ignored
+                                          uid=22_136 generic
+                                            uid=22_137 ignored
+                                              uid=22_138 generic
+                                                uid=22_139 generic
+                                                  uid=22_140 generic
+                                                    uid=21_22 textbox "填写标题会有更多赞哦" value="非程序员 Claude Code 用户必看！怎么用Git"
+                                                      uid=22_141 ignored
+                                                      uid=22_142 generic
+                                                        uid=22_143 StaticText "非程序员 Claude Code 用户必看！怎么用Git"
+                                                          uid=22_7 InlineTextBox "非程序员 Claude Code 用户必看！怎么用Git"
+                                                uid=22_144 generic
+                                              uid=22_145 generic
+                                                uid=22_146 image url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAfnSURBVHgB7VpPbxtFFH+zm7RBFcL9BHU/QcORU+2KCweU9tZWquoUkFpaWhsopSCI3T9QqGhNBUopgTgX/pyanDjGnDjifII6n6BGqFJo7BneezOzO47TZGdtpy34J22yu/buzG/ee7/3ZsYAI4wwwgj/BxyfV5PwHGIMUuDEvCqEAWTxtAHPGQJIgUDASaXgPDyHEOCJwrzK4r8H5jJfmxZ1GBLO3lRFtMg+KaDx7ftiAQYAb5eWACcDBUooEDhaF/BWHQaM4m2VabfhPnpRDg+yijr/hcreuSQq0Ce8LMzWVbCMZOk/0BGilefeGpyVDdllfDeJohIS+6iijpbvXO6PdOIYZrISyUomSxbmTqAFfjw9y27eN7rIGi+iJugPtyehfP66moE+sK2FkWgG/13AxorYiQy5F6ho1PmcO6Oghtau3D0jmpACTHZdk+VOxe8HYdqD+LpS/SSdpcUWJHP4corRg7ZBoaKOcNOCbiljAamJ43Udv7CAaavuQ54Iy8ewrKwr67aEJU0HakfcHpK+NeNP+kkuncVjCl+cNUQolsB2RNhRl4ZohwdEmcE4gB07CG1+R2JUS6IV7II8Pt+I4ta8E3QfNFndLn1efvdTf/fe1qVP/aAK0GHyU5qyIWnOrcWxI3WpYHFPGxao85AAxTK68QuQ++aSWHTvqXG0NA6ciK0KIhYua3H2qBcD2FsuJ2svEWGLU7OqgAXHLTzNdCkn/RdQ/O6s+Bo8YMhyzOJ7C5hyFtzPMGHqeI5jVxiLR4NNn7VD2F8tJw8dr7T05qzKYSPLVkCMipbunRNVn/cw2QlUfLIi3ZD8nsKdj7pJi5DbOgCbWVryQDdvXhX7wQNepeXcGcy3qMY2hine0pLFhid54DpG5SXUSp+pk/Z7aLWW6mBMdzCmbejYuDZkw3XIgye8a2klYcEKV9ABb7KSyOo8y1YDRwhVG0lf6yaNZeUhHIwVJBkrt9Jkb9zwT4HehOfeEXVB5aSE1m4JS0mfs2RNUUEWBStKjvABWrRWqnST7gSQxzhfMQPzIOykI0tINVvClPM7Nrzoo8ZMVmoRsge5ZqS5+ty67vx7G0ivI2kcpEUkeygtWYL3bIkJYJGwhjF4t7R9De2SBXDKxZjcZkWNPlC9v7oymFmSRSrCScE5dRfn1ElLCCxpV3EtYYJ07gHfL3x5fXCkh0aYLYsFBBBZwS4ronRC/x3yZjCiXEslqx0EjPHmxG542ae42ApDIWzJCmA3hidZ1y0fI5IQ38fJSBOzQl8xuxEDJ2zd2KmSYNMYtXNd6CGP9QafN7HQyA+SLCHVIt6TYOtgd4rnphzlTPesRaPP9fdFYNwYPX/gZAkDI2zJCpNnCe7cmRCAmWHRhWtxfU8FpqgYFllCCAMAF/uuZeP0w7Dnm8Wt0MtEEEgekNVdSPbakMhyH6BPdFkWjBpviFfHolqBsUwMIFopIXEiV26uD9GyFn25tLWscNeglHFlQwyDNXJj53OBgsVEhbZsMxSQvzpksoTUhJ056wFb1EO88BanIqO8/JDUFmYVNqTJjYlseQfIElIR7pmgx6sRXQt7AF05V4uSFicmTGSDHSRLSGfhsMuyNq9qSOfaWJxmKGxR4JTDMyRyY7HDZAnehEtXFa1k2pglREIE0CNYIiC3FSZWlRYrEigM3B0nS/AmjNXP4WjVEmIh2rjWZIsNJuiQFU+RLMGbsJDGN+OiwRb7UdEfmHRDgxHGVqXHmuopkiX4E6Y1axnXvTY2zTmvX7MLqyheqbCgwVgdR7KXnyJZgr9o0XaLUVnVO5VjFzckI9I4Es8EWYK/hQ1h67pgXRa0+orYhcEIVhO3XQ49C2QJXoR5rbgDUYkoYqIgnHIxilu0bBD2R/Z+UWVaa5DJTEDrSLX/RQAvwuMA0b4w51Y31cRktVsLeOBLdh7JyTU4HCpeoM/RPvSjR5DZjW2s/Q3i1zcUtdfCz2mtuoGdX3q95rc37TV5uFhWk+Ix/MlkHTUOjBqDcWU8b6In5C9Xk5H9/pzK4Rr3FIphAWM/ExgPCpyBDe096Xymj4f4nSUUjcprte3b8yJMLj3xD1QD2iGUXCm1aMTpQOKr9B3scOPjmyLRr3tmT6ss1tG38ZnDrqpzmMi4SjP3lRFEqxH22s3xxVd/2nqPa+BLPElx7211ATtYxs5mQtVjtbgkdQbC1QfhXDvPNvM/b73XNNAlniSIrCrZqsqQYnKhjNyWFLFB3kKeJGmSAfASEtpL8Y36kOVdRxk9z15BobRd+16Eyx/ybzmyWCnVwRMUp9hJjlOyKruqsYyjB6tIsjqO+1dHalsr8m9HceACyOFzMyRuVLJ2BExv14/ELl35QM1gn8omxh7i6K6E+ucNKyhQTVTwZsmkjdmi/pGLfAy5MaEV11gEutwUYuHB71w5Oue3E2nxB5J/5ZdkApmY8JWLStoKK3QKDyMwVjjAFZoeIVK9MRnQxlwbpo/VnrEFAFZigL2OeMQTBOgmJFTXVDAWGzvx1/fIGyrHUlo1LRLvHmIHK2xJyeICJt/CmC4h9VqzivIwHewJ9jqIlfQhekflhTbsP77DZJmHz5c/x9hEa+bwmKJNbSS+L7IYaGLgujlEKYaWchZxR3/pxNzwfpuZBH3l4dtYCo61kTiw6u7DAcgQUVTiv4IAXbYDDdgDzenqYDbCRhhhhBFG+K/jXzoAajYme/giAAAAAElFTkSuQmCC"
+                                                uid=22_147 ignored
+                                                  uid=21_23 StaticText "智能标题"
+                                                    uid=22_7 InlineTextBox "智能标题"
+                                                uid=22_148 image
+                                            uid=22_149 ignored
+                                              uid=22_150 generic
+                                                uid=22_151 ignored
+                                                  uid=21_24 textbox focusable focused multiline value="一个朋友问我：让 Claude 实现了一个工具，调了 6 版想回到第 3 版，但 CC 告诉我「没有版本记录」，怎么办？
+
+
+
+
+这是用 Claude Code 做项目的新手朋友，很容易踩的坑，还有下面这些类似的：
+
+1️⃣ Claude Code 生成了 v1/v2/v3 的文件， 一周后分不清哪个是哪个了
+
+2️⃣ CLAUDE.md 改着改着，Claude 行为变怪了，但不知道哪一次改坏的
+
+3️⃣ 多人协作，几个人同时更改了一些文件，合并改动简直是灾难
+
+4️⃣ 用 Claude Code 迭代一个月的写作风格，想知道是怎么演进的，但没留过快照
+
+5️⃣ Claude 改了配置我没注意就同意了，几天后才发现有问题，但是不知道它到底改了什么
+
+
+
+
+它们的共同点：没有「存档」。
+
+
+
+
+好消息是，在软件工程领域早就有解决方案了 —— Git 就是你的存档键
+
+
+
+
+其实这个工具很简单，不是程序员才会用的工具。下面是最基础的 6 个命令：
+
+git init → 开启存档（只需要跑一次）
+
+git add + commit → 存一个档（改完就存，养成习惯）
+
+git log → 看看存了哪些档（像翻相册）
+
+git diff → 对比改了什么（Claude 改了啥一目了然）
+
+git checkout → 回到之前的版本（后悔药）
+
+git branch →  开一条新路线试试（不影响主线）
+
+
+
+
+你甚至可以直接让 Claude Code 执行它们。
+
+
+
+
+💡 在 CLAUDE.md 加一条规则，Claude 就能自动帮你存档👇
+
+「项目使用 git 管理，每次完成修改后自动 commit。」
+
+
+
+
+最近，Claude Code 内置了 git worktree，比 git branch 更好用，感兴趣的可以找 Claude 了解。
+
+
+
+
+在使用 Claude Code 初期你踩过哪个坑？评论区见👇
+
+#vibecoding[话题]# #vibecoding大赏[话题]# #AI工具[话题]# #文科生转码[话题]# #ClaudeCode[话题]# #AI编程[话题]# #转码[话题]#
+"
+                                                    uid=21_25 paragraph
+                                                      uid=21_26 StaticText "一个朋友问我：让 Claude 实现了一个工具，调了 6 版想回到第 3 版，但 CC 告诉我「没有版本记录」，怎么办？"
+                                                        uid=22_7 InlineTextBox "一个朋友问我：让 Claude 实现了一个工具，调了 6 版想回到第 3 版，但 CC 告诉我「没有"
+                                                        uid=22_7 InlineTextBox "版本记录」，怎么办？"
+                                                    uid=21_27 paragraph
+                                                      uid=22_152 LineBreak "
+"
+                                                        uid=22_7 InlineTextBox "
+"
+                                                    uid=21_28 paragraph
+                                                      uid=21_29 StaticText "这是用 Claude Code 做项目的新手朋友，很容易踩的坑，还有下面这些类似的："
+                                                        uid=22_7 InlineTextBox "这是用 Claude Code 做项目的新手朋友，很容易踩的坑，还有下面这些类似的："
+                                                    uid=21_30 paragraph
+                                                      uid=21_31 StaticText "1️⃣ Claude Code 生成了 v1/v2/v3 的文件， 一周后分不清哪个是哪个了"
+                                                        uid=22_7 InlineTextBox "1️⃣ Claude Code 生成了 v1/v2/v3 的文件， 一周后分不清哪个是哪个了"
+                                                    uid=21_32 paragraph
+                                                      uid=21_33 StaticText "2️⃣ CLAUDE.md 改着改着，Claude 行为变怪了，但不知道哪一次改坏的"
+                                                        uid=22_7 InlineTextBox "2️⃣ CLAUDE.md 改着改着，Claude 行为变怪了，但不知道哪一次改坏的"
+                                                    uid=21_34 paragraph
+                                                      uid=21_35 StaticText "3️⃣ 多人协作，几个人同时更改了一些文件，合并改动简直是灾难"
+                                                        uid=22_7 InlineTextBox "3️⃣ 多人协作，几个人同时更改了一些文件，合并改动简直是灾难"
+                                                    uid=21_36 paragraph
+                                                      uid=21_37 StaticText "4️⃣ 用 Claude Code 迭代一个月的写作风格，想知道是怎么演进的，但没留过快照"
+                                                        uid=22_7 InlineTextBox "4️⃣ 用 Claude Code 迭代一个月的写作风格，想知道是怎么演进的，但没留过快照"
+                                                    uid=21_38 paragraph
+                                                      uid=21_39 StaticText "5️⃣ Claude 改了配置我没注意就同意了，几天后才发现有问题，但是不知道它到底改了什么"
+                                                        uid=22_7 InlineTextBox "5️⃣ Claude 改了配置我没注意就同意了，几天后才发现有问题，但是不知道它到底改了什么"
+                                                    uid=21_40 paragraph
+                                                      uid=22_153 LineBreak "
+"
+                                                        uid=22_7 InlineTextBox "
+"
+                                                    uid=21_41 paragraph
+                                                      uid=21_42 StaticText "它们的共同点：没有「存档」。"
+                                                        uid=22_7 InlineTextBox "它们的共同点：没有「存档」。"
+                                                    uid=21_43 paragraph
+                                                      uid=22_154 LineBreak "
+"
+                                                        uid=22_7 InlineTextBox "
+"
+                                                    uid=21_44 paragraph
+                                                      uid=21_45 StaticText "好消息是，在软件工程领域早就有解决方案了 —— Git 就是你的存档键"
+                                                        uid=22_7 InlineTextBox "好消息是，在软件工程领域早就有解决方案了 —— Git 就是你的存档键"
+                                                    uid=21_46 paragraph
+                                                      uid=22_155 LineBreak "
+"
+                                                        uid=22_7 InlineTextBox "
+"
+                                                    uid=21_47 paragraph
+                                                      uid=21_48 StaticText "其实这个工具很简单，不是程序员才会用的工具。下面是最基础的 6 个命令："
+                                                        uid=22_7 InlineTextBox "其实这个工具很简单，不是程序员才会用的工具。下面是最基础的 6 个命令："
+                                                    uid=21_49 paragraph
+                                                      uid=21_50 StaticText "git init → 开启存档（只需要跑一次）"
+                                                        uid=22_7 InlineTextBox "git init → 开启存档（只需要跑一次）"
+                                                    uid=21_51 paragraph
+                                                      uid=21_52 StaticText "git add + commit → 存一个档（改完就存，养成习惯）"
+                                                        uid=22_7 InlineTextBox "git add + commit → 存一个档（改完就存，养成习惯）"
+                                                    uid=21_53 paragraph
+                                                      uid=21_54 StaticText "git log → 看看存了哪些档（像翻相册）"
+                                                        uid=22_7 InlineTextBox "git log → 看看存了哪些档（像翻相册）"
+                                                    uid=21_55 paragraph
+                                                      uid=21_56 StaticText "git diff → 对比改了什么（Claude 改了啥一目了然）"
+                                                        uid=22_7 InlineTextBox "git diff → 对比改了什么（Claude 改了啥一目了然）"
+                                                    uid=21_57 paragraph
+                                                      uid=21_58 StaticText "git checkout → 回到之前的版本（后悔药）"
+                                                        uid=22_7 InlineTextBox "git checkout → 回到之前的版本（后悔药）"
+                                                    uid=21_59 paragraph
+                                                      uid=21_60 StaticText "git branch →  开一条新路线试试（不影响主线）"
+                                                        uid=22_7 InlineTextBox "git branch →  开一条新路线试试（不影响主线）"
+                                                    uid=21_61 paragraph
+                                                      uid=22_156 LineBreak "
+"
+                                                        uid=22_7 InlineTextBox "
+"
+                                                    uid=21_62 paragraph
+                                                      uid=21_63 StaticText "你甚至可以直接让 Claude Code 执行它们。"
+                                                        uid=22_7 InlineTextBox "你甚至可以直接让 Claude Code 执行它们。"
+                                                    uid=21_64 paragraph
+                                                      uid=22_157 LineBreak "
+"
+                                                        uid=22_7 InlineTextBox "
+"
+                                                    uid=21_65 paragraph
+                                                      uid=21_66 StaticText "💡 在 CLAUDE.md 加一条规则，Claude 就能自动帮你存档👇"
+                                                        uid=22_7 InlineTextBox "💡 在 CLAUDE.md 加一条规则，Claude 就能自动帮你存档👇"
+                                                    uid=21_67 paragraph
+                                                      uid=21_68 StaticText "「项目使用 git 管理，每次完成修改后自动 commit。」"
+                                                        uid=22_7 InlineTextBox "「项目使用 git 管理，每次完成修改后自动 commit。」"
+                                                    uid=21_69 paragraph
+                                                      uid=22_158 LineBreak "
+"
+                                                        uid=22_7 InlineTextBox "
+"
+                                                    uid=21_70 paragraph
+                                                      uid=21_71 StaticText "最近，Claude Code 内置了 git worktree，比 git branch 更好用，感兴趣的可以找 Claude 了解。"
+                                                        uid=22_7 InlineTextBox "最近，Claude Code 内置了 git worktree，比 git branch 更好用，感兴趣的可以找 Claude"
+                                                        uid=22_7 InlineTextBox " "
+                                                        uid=22_7 InlineTextBox "了解。"
+                                                    uid=21_72 paragraph
+                                                      uid=22_159 LineBreak "
+"
+                                                        uid=22_7 InlineTextBox "
+"
+                                                    uid=21_73 paragraph
+                                                      uid=21_74 StaticText "在使用 Claude Code 初期你踩过哪个坑？评论区见👇"
+                                                        uid=22_7 InlineTextBox "在使用 Claude Code 初期你踩过哪个坑？评论区见👇"
+                                                    uid=21_75 paragraph
+                                                      uid=22_160 StaticText "#vibecoding"
+                                                        uid=22_7 InlineTextBox "#vibecoding"
+                                                      uid=22_161 StaticText "[话题]#"
+                                                        uid=22_7 InlineTextBox "["
+                                                        uid=22_7 InlineTextBox "话"
+                                                        uid=22_7 InlineTextBox "题"
+                                                        uid=22_7 InlineTextBox "]"
+                                                        uid=22_7 InlineTextBox "#"
+                                                      uid=21_76 StaticText " "
+                                                        uid=22_7 InlineTextBox " "
+                                                      uid=22_162 StaticText "#vibecoding大赏"
+                                                        uid=22_7 InlineTextBox "#vibecoding大赏"
+                                                      uid=22_163 StaticText "[话题]#"
+                                                        uid=22_7 InlineTextBox "["
+                                                        uid=22_7 InlineTextBox "话"
+                                                        uid=22_7 InlineTextBox "题"
+                                                        uid=22_7 InlineTextBox "]"
+                                                        uid=22_7 InlineTextBox "#"
+                                                      uid=21_77 StaticText " "
+                                                        uid=22_7 InlineTextBox " "
+                                                      uid=22_164 StaticText "#AI工具"
+                                                        uid=22_7 InlineTextBox "#AI工具"
+                                                      uid=22_165 StaticText "[话题]#"
+                                                        uid=22_7 InlineTextBox "["
+                                                        uid=22_7 InlineTextBox "话"
+                                                        uid=22_7 InlineTextBox "题"
+                                                        uid=22_7 InlineTextBox "]"
+                                                        uid=22_7 InlineTextBox "#"
+                                                      uid=21_78 StaticText " "
+                                                        uid=22_7 InlineTextBox " "
+                                                      uid=22_166 StaticText "#文科生转码"
+                                                        uid=22_7 InlineTextBox "#文科生转码"
+                                                      uid=22_167 StaticText "[话题]#"
+                                                        uid=22_7 InlineTextBox "["
+                                                        uid=22_7 InlineTextBox "话"
+                                                        uid=22_7 InlineTextBox "题"
+                                                        uid=22_7 InlineTextBox "]"
+                                                        uid=22_7 InlineTextBox "#"
+                                                      uid=21_79 StaticText " "
+                                                        uid=22_7 InlineTextBox " "
+                                                      uid=22_168 StaticText "#ClaudeCode"
+                                                        uid=22_7 InlineTextBox "#ClaudeCode"
+                                                      uid=22_169 StaticText "[话题]#"
+                                                        uid=22_7 InlineTextBox "["
+                                                        uid=22_7 InlineTextBox "话"
+                                                        uid=22_7 InlineTextBox "题"
+                                                        uid=22_7 InlineTextBox "]"
+                                                        uid=22_7 InlineTextBox "#"
+                                                      uid=21_80 StaticText " "
+                                                        uid=22_7 InlineTextBox " "
+                                                      uid=22_170 StaticText "#AI编程"
+                                                        uid=22_7 InlineTextBox "#AI编程"
+                                                      uid=22_171 StaticText "[话题]#"
+                                                        uid=22_7 InlineTextBox "["
+                                                        uid=22_7 InlineTextBox "话"
+                                                        uid=22_7 InlineTextBox "题"
+                                                        uid=22_7 InlineTextBox "]"
+                                                        uid=22_7 InlineTextBox "#"
+                                                      uid=21_81 StaticText " "
+                                                        uid=22_7 InlineTextBox " "
+                                                      uid=22_172 StaticText "#转码"
+                                                        uid=22_7 InlineTextBox "#转码"
+                                                      uid=22_173 StaticText "[话题]#"
+                                                        uid=22_7 InlineTextBox "["
+                                                        uid=22_7 InlineTextBox "话"
+                                                        uid=22_7 InlineTextBox "题"
+                                                        uid=22_7 InlineTextBox "]"
+                                                        uid=22_7 InlineTextBox "#"
+                                                      uid=22_174 LineBreak "
+"
+                                                        uid=22_7 InlineTextBox "
+"
+                                              uid=22_175 ignored
+                                                uid=22_176 ignored
+                                                  uid=22_177 generic
+                                                    uid=22_178 generic
+                                                      uid=21_82 StaticText "#开发者选项"
+                                                        uid=22_7 InlineTextBox "#开发者选项"
+                                                    uid=22_179 generic
+                                                      uid=21_83 StaticText "#程序员"
+                                                        uid=22_7 InlineTextBox "#程序员"
+                                                    uid=22_180 generic
+                                                      uid=21_84 StaticText "#个人开发者"
+                                                        uid=22_7 InlineTextBox "#个人开发者"
+                                                    uid=22_181 generic
+                                                      uid=21_85 StaticText "#编程"
+                                                        uid=22_7 InlineTextBox "#编程"
+                                                    uid=22_182 generic
+                                                      uid=21_86 StaticText "#开发者模式"
+                                                        uid=22_7 InlineTextBox "#开发者模式"
+                                                    uid=22_183 generic
+                                                      uid=21_87 StaticText "更多"
+                                                        uid=22_7 InlineTextBox "更多"
+                                                      uid=22_184 image
+                                            uid=22_185 ignored
+                                              uid=22_186 generic
+                                                uid=22_187 ignored
+                                                  uid=22_188 ignored
+                                                    uid=21_88 button " 话题"
+                                                      uid=22_189 image
+                                                      uid=22_190 StaticText " 话题"
+                                                        uid=22_7 InlineTextBox " 话题"
+                                                    uid=21_89 button
+                                                      uid=22_191 image
+                                                uid=22_192 ignored
+                                                  uid=21_90 button " 用户"
+                                                    uid=22_193 image
+                                                    uid=22_194 StaticText " 用户"
+                                                      uid=22_7 InlineTextBox " 用户"
+                                                uid=22_195 ignored
+                                                  uid=21_91 button " 表情"
+                                                    uid=22_196 image
+                                                    uid=22_197 StaticText " 表情"
+                                                      uid=22_7 InlineTextBox " 表情"
+                                              uid=22_198 ignored
+                                                uid=21_92 StaticText "819"
+                                                  uid=22_7 InlineTextBox "819"
+                                                uid=22_199 ignored
+                                                  uid=21_93 StaticText "/1000"
+                                                    uid=22_7 InlineTextBox "/1000"
+                                        uid=22_200 ignored
+                                          uid=22_201 ignored
+                                          uid=22_202 ignored
+                                            uid=22_203 ignored
+                                              uid=22_204 ignored
+                                                uid=21_94 StaticText "活动话题"
+                                                  uid=22_7 InlineTextBox "活动话题"
+                                              uid=22_205 generic
+                                                uid=21_95 StaticText "更多"
+                                                  uid=22_7 InlineTextBox "更多"
+                                                uid=22_206 image
+                                            uid=22_207 ignored
+                                              uid=22_208 generic
+                                                uid=22_209 generic
+                                                  uid=22_210 generic
+                                                    uid=22_211 image url="https://growth-img.xhscdn.com/ditto/104100n031tc5ik9e6e06fog8mo2760000000008h3i21k"
+                                                  uid=22_212 ignored
+                                                    uid=22_213 ignored
+                                                      uid=22_214 image url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAABWElEQVR4Xu2W0Y2DMBBEU8KVwA8G8ZUSUkJKSAdJCdfBXQeUkOuEEiiBEu52ovVpMyB7PvIXnrSKxIzH4MUmh8POTmAYhmNKaWnb9sJaRPXJWNC3Bf7WAlWfjIVNCMQTsRZRfRJN03wgzGpmLaL6ZCzojMCu635Yi6i+TWzQ1QaPVI/l81/Wij7r9RdWgudZYebFB7+s+r4/8TwrzNRYXXLZwE8PmON1roLvxHNIJO+b1chaRPXJIAiBtX2p+mSSvzBoAWsR1SeBkNw31iKqT8ZfmmrfVJ9M7pvVmbWI6pOxw2RW+qb6JELfJtYiqq8INnve+DjquG84+sLBwL6JNWkFMKkHcP33zZb0tqGXaolzbIKn8Y/46PUYHO/alzXrT76N6yNuNExRx24Af18QVuyb6pNBfxCIFWAtovpkLOzuT1Lcl6pPJu/L2gdc9cl4YPX4U30778cf6hgADWVp6fsAAAAASUVORK5CYII="
+                                                      uid=22_215 generic
+                                                        uid=21_96 StaticText "小红书原画直出"
+                                                          uid=22_7 InlineTextBox "小红书原画直出"
+                                                    uid=22_216 ignored
+                                                      uid=22_217 generic
+                                                        uid=22_218 image url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAABgklEQVR4Xu2WwXGDMBBFKSElqISUQCmUkKPgQjqIO7A7cAkpJaUkerCylw8WCgdfkjezY6y/2s9Kwrhp/jFijCFF1/f9R/o8E3bdoWn+YVKxNsVniu+dIKfT+dWM4/iSOrj6gun72zAMr3RE2DUd+hui+6D1iljBL3fnreYoNicbMzdoziZi9q76HszJpqyS6ivivCSHzDLZlC1RbUGc92NaRtU8nE5Cxz3UsFqtajdcUlDNw3IROu7BqHjzmBQTHDWGUGwg3pezU02pNeQxelgzDZ4QebZUU2oN7TnF8KQaRS5b7dvP12TggjxiMa4HiVqWd/bjWdw0jHPnVYbkytyi4dOXdDo0bLRqSq1hrsmnar795zwW4BJa1Tw1hlUNYLSb1Nz2e70vDnfznWoL3DtwVK0W5lqN9elUeKXE+9H/takzo0ZQfRMSnSlLEzRHicu/IvVmGTO9WIFs3OlfDPu9zEbTO7DqxfsITHzBQpDT6vzD0JGZc0LPFlwzFjT/7/IDeHvnR7Pif3cAAAAASUVORK5CYII="
+                                                        uid=21_97 StaticText " 添加话题"
+                                                          uid=22_7 InlineTextBox " 添加话题"
+                                                      uid=22_219 ignored
+                                                        uid=21_98 StaticText "活动详情 "
+                                                          uid=22_7 InlineTextBox "活动详情 "
+                                                        uid=22_220 image url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAiElEQVR4XmNgGAUjGtTX1wtUVlYGoIvTDFRUVOwH4v9APB9djiYA6LsCqIX0sxRoUcOAWgr09XlQ3KKroToYtZSmYMAtBeIJ6PJUB0BL6ulmIZpl94FYAV0N1cCAWUbzxDJ8LQNa0I8UZwvoahm6PNVBBaICXoAuRxMAtEihqqrKAF18FAxvAADqELJ8J/zf/wAAAABJRU5ErkJggg=="
+                                                uid=22_221 generic
+                                                  uid=22_222 generic
+                                                    uid=22_223 image url="https://growth-img.xhscdn.com/ditto/104100n031tb7v4015a06fvofv82700000000009s9mcb0"
+                                                  uid=22_224 ignored
+                                                    uid=22_225 ignored
+                                                      uid=22_226 image url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAgCAYAAAAFQMh/AAABWElEQVR4Xu2W0Y2DMBBEU8KVwA8G8ZUSUkJKSAdJCdfBXQeUkOuEEiiBEu52ovVpMyB7PvIXnrSKxIzH4MUmh8POTmAYhmNKaWnb9sJaRPXJWNC3Bf7WAlWfjIVNCMQTsRZRfRJN03wgzGpmLaL6ZCzojMCu635Yi6i+TWzQ1QaPVI/l81/Wij7r9RdWgudZYebFB7+s+r4/8TwrzNRYXXLZwE8PmON1roLvxHNIJO+b1chaRPXJIAiBtX2p+mSSvzBoAWsR1SeBkNw31iKqT8ZfmmrfVJ9M7pvVmbWI6pOxw2RW+qb6JELfJtYiqq8INnve+DjquG84+sLBwL6JNWkFMKkHcP33zZb0tqGXaolzbIKn8Y/46PUYHO/alzXrT76N6yNuNExRx24Af18QVuyb6pNBfxCIFWAtovpkLOzuT1Lcl6pPJu/L2gdc9cl4YPX4U30778cf6hgADWVp6fsAAAAASUVORK5CYII="
+                                                      uid=22_227 generic
+                                                        uid=21_99 StaticText "少东家侠奥会"
+                                                          uid=22_7 InlineTextBox "少东家侠奥会"
+                                                    uid=22_228 ignored
+                                                      uid=22_229 generic
+                                                        uid=22_230 image url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAABgklEQVR4Xu2WwXGDMBBFKSElqISUQCmUkKPgQjqIO7A7cAkpJaUkerCylw8WCgdfkjezY6y/2s9Kwrhp/jFijCFF1/f9R/o8E3bdoWn+YVKxNsVniu+dIKfT+dWM4/iSOrj6gun72zAMr3RE2DUd+hui+6D1iljBL3fnreYoNicbMzdoziZi9q76HszJpqyS6ivivCSHzDLZlC1RbUGc92NaRtU8nE5Cxz3UsFqtajdcUlDNw3IROu7BqHjzmBQTHDWGUGwg3pezU02pNeQxelgzDZ4QebZUU2oN7TnF8KQaRS5b7dvP12TggjxiMa4HiVqWd/bjWdw0jHPnVYbkytyi4dOXdDo0bLRqSq1hrsmnar795zwW4BJa1Tw1hlUNYLSb1Nz2e70vDnfznWoL3DtwVK0W5lqN9elUeKXE+9H/takzo0ZQfRMSnSlLEzRHicu/IvVmGTO9WIFs3OlfDPu9zEbTO7DqxfsITHzBQpDT6vzD0JGZc0LPFlwzFjT/7/IDeHvnR7Pif3cAAAAASUVORK5CYII="
+                                                        uid=21_100 StaticText " 添加话题"
+                                                          uid=22_7 InlineTextBox " 添加话题"
+                                                      uid=22_231 ignored
+                                                        uid=21_101 StaticText "活动详情 "
+                                                          uid=22_7 InlineTextBox "活动详情 "
+                                                        uid=22_232 image url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAiElEQVR4XmNgGAUjGtTX1wtUVlYGoIvTDFRUVOwH4v9APB9djiYA6LsCqIX0sxRoUcOAWgr09XlQ3KKroToYtZSmYMAtBeIJ6PJUB0BL6ulmIZpl94FYAV0N1cCAWUbzxDJ8LQNa0I8UZwvoahm6PNVBBaICXoAuRxMAtEihqqrKAF18FAxvAADqELJ8J/zf/wAAAABJRU5ErkJggg=="
+                                        uid=22_233 ignored
+                                          uid=22_234 ignored
+                                            uid=22_235 generic
+                                              uid=21_102 StaticText "内容设置"
+                                                uid=22_7 InlineTextBox "内容设置"
+                                            uid=22_236 generic
+                                              uid=22_237 ignored
+                                                uid=21_103 StaticText "收起"
+                                                  uid=22_7 InlineTextBox "收起"
+                                              uid=22_238 image
+                                          uid=22_239 ignored
+                                            uid=22_240 generic
+                                              uid=22_241 ignored
+                                                uid=22_242 image
+                                              uid=22_243 ignored
+                                                uid=22_244 generic
+                                                  uid=21_104 StaticText "加入合集"
+                                                    uid=22_7 InlineTextBox "加入合集"
+                                                uid=22_245 generic
+                                                  uid=21_105 StaticText "汇集系列视频，有利于连续性观看"
+                                                    uid=22_7 InlineTextBox "汇集系列视频，有利于连续性观看"
+                                              uid=22_246 ignored
+                                                uid=22_247 image
+                                                uid=21_106 StaticText "创建合集"
+                                                  uid=22_7 InlineTextBox "创建合集"
+                                            uid=22_248 ignored
+                                              uid=22_249 ignored
+                                                uid=22_250 ignored
+                                                  uid=22_251 ignored
+                                                    uid=22_252 image
+                                                  uid=22_253 ignored
+                                                    uid=21_107 StaticText "原创声明"
+                                                      uid=22_7 InlineTextBox "原创声明"
+                                                    uid=22_254 ignored
+                                                  uid=22_255 generic
+                                                    uid=22_256 generic
+                                                      uid=22_257 ignored
+                                                        uid=22_258 ignored
+                                                          uid=22_259 ignored
+                                                            uid=21_108 checkbox checked
+                                                            uid=22_260 ignored
+                                            uid=22_261 ignored
+                                              uid=21_109 generic
+                                                uid=22_262 generic
+                                                  uid=22_263 generic
+                                                    uid=22_264 ignored
+                                                      uid=22_265 image
+                                                    uid=22_266 ignored
+                                                      uid=22_267 ignored
+                                                      uid=22_268 generic
+                                                        uid=21_110 StaticText "添加内容类型声明"
+                                                          uid=22_7 InlineTextBox "添加内容类型声明"
+                                                    uid=22_269 ignored
+                                                      uid=22_270 generic
+                                                        uid=22_271 image
+                                              uid=22_272 ignored
+                                          uid=22_273 ignored
+                                            uid=22_274 generic
+                                              uid=21_111 StaticText "添加组件"
+                                                uid=22_7 InlineTextBox "添加组件"
+                                          uid=22_275 ignored
+                                            uid=22_276 ignored
+                                              uid=22_277 generic
+                                                uid=21_112 generic
+                                                  uid=22_278 generic
+                                                    uid=22_279 generic
+                                                      uid=22_280 ignored
+                                                        uid=22_281 image
+                                                      uid=22_282 ignored
+                                                        uid=22_283 ignored
+                                                        uid=22_284 generic
+                                                          uid=21_113 textbox
+                                                            uid=22_285 generic
+                                                        uid=22_286 generic
+                                                          uid=21_114 StaticText "添加地点"
+                                                            uid=22_7 InlineTextBox "添加地点"
+                                                      uid=22_287 ignored
+                                                        uid=22_288 generic
+                                                          uid=22_289 image
+                                            uid=22_290 ignored
+                                              uid=22_291 generic
+                                                uid=21_115 generic
+                                                  uid=22_292 generic
+                                                    uid=22_293 generic
+                                                      uid=22_294 ignored
+                                                        uid=22_295 image
+                                                      uid=22_296 ignored
+                                                        uid=22_297 ignored
+                                                        uid=22_298 generic
+                                                          uid=21_116 textbox
+                                                            uid=22_299 generic
+                                                        uid=22_300 generic
+                                                          uid=21_117 StaticText "选择群聊"
+                                                            uid=22_7 InlineTextBox "选择群聊"
+                                                      uid=22_301 ignored
+                                                        uid=22_302 generic
+                                                          uid=22_303 image
+                                            uid=22_304 ignored
+                                              uid=22_305 ignored
+                                                uid=22_306 generic
+                                                  uid=22_307 ignored
+                                                    uid=22_308 ignored
+                                                      uid=22_309 image
+                                                    uid=22_310 ignored
+                                                      uid=21_118 StaticText "关联直播预告"
+                                                        uid=22_7 InlineTextBox "关联直播预告"
+                                                  uid=22_311 ignored
+                                                    uid=22_312 image
+                                            uid=22_313 ignored
+                                              uid=22_314 ignored
+                                                uid=22_315 generic
+                                                  uid=22_316 ignored
+                                                    uid=22_317 ignored
+                                                      uid=22_318 image
+                                                    uid=22_319 ignored
+                                                      uid=21_119 StaticText "标记地点或标记朋友"
+                                                        uid=22_7 InlineTextBox "标记地点或标记朋友"
+                                                  uid=22_320 ignored
+                                                    uid=22_321 image
+                                            uid=22_322 ignored
+                                              uid=22_323 ignored
+                                                uid=22_324 generic
+                                                  uid=22_325 ignored
+                                                    uid=22_326 ignored
+                                                      uid=22_327 image
+                                                    uid=22_328 ignored
+                                                      uid=21_120 StaticText "添加路线"
+                                                        uid=22_7 InlineTextBox "添加路线"
+                                                  uid=22_329 ignored
+                                                    uid=22_330 image
+                                            uid=22_331 ignored
+                                              uid=22_332 ignored
+                                                uid=22_333 generic
+                                                  uid=22_334 generic
+                                                    uid=22_335 ignored
+                                                      uid=22_336 image
+                                                    uid=22_337 ignored
+                                                      uid=21_121 StaticText "选择文件"
+                                                        uid=22_7 InlineTextBox "选择文件"
+                                                  uid=22_338 ignored
+                                                    uid=22_339 image
+                                        uid=22_340 ignored
+                                          uid=22_341 ignored
+                                            uid=22_342 generic
+                                              uid=21_122 StaticText "更多设置"
+                                                uid=22_7 InlineTextBox "更多设置"
+                                            uid=22_343 generic
+                                              uid=22_344 ignored
+                                                uid=21_123 StaticText "收起"
+                                                  uid=22_7 InlineTextBox "收起"
+                                              uid=22_345 image
+                                          uid=22_346 ignored
+                                            uid=22_347 ignored
+                                              uid=22_348 ignored
+                                                uid=22_349 ignored
+                                                  uid=22_350 ignored
+                                                    uid=22_351 image
+                                                  uid=22_352 ignored
+                                                    uid=21_124 StaticText "允许合拍"
+                                                      uid=22_7 InlineTextBox "允许合拍"
+                                                    uid=22_353 ignored
+                                                  uid=22_354 generic
+                                                    uid=22_355 generic
+                                                      uid=22_356 ignored
+                                                        uid=22_357 ignored
+                                                          uid=22_358 ignored
+                                                            uid=21_125 checkbox checked
+                                                            uid=22_359 ignored
+                                            uid=22_360 ignored
+                                              uid=22_361 ignored
+                                                uid=22_362 ignored
+                                                  uid=22_363 ignored
+                                                    uid=22_364 image
+                                                  uid=22_365 ignored
+                                                    uid=21_126 StaticText "允许正文复制"
+                                                      uid=22_7 InlineTextBox "允许正文复制"
+                                                    uid=22_366 ignored
+                                                  uid=22_367 generic
+                                                    uid=22_368 generic
+                                                      uid=22_369 ignored
+                                                        uid=22_370 ignored
+                                                          uid=22_371 ignored
+                                                            uid=21_127 checkbox checked
+                                                            uid=22_372 ignored
+                                            uid=22_373 ignored
+                                              uid=22_374 generic
+                                                uid=21_128 generic
+                                                  uid=22_375 generic
+                                                    uid=22_376 generic
+                                                      uid=22_377 ignored
+                                                        uid=22_378 image
+                                                      uid=22_379 ignored
+                                                        uid=22_380 generic
+                                                          uid=21_129 StaticText "公开可见"
+                                                            uid=22_7 InlineTextBox "公开可见"
+                                                        uid=22_381 generic
+                                                      uid=22_382 ignored
+                                                        uid=22_383 generic
+                                                          uid=22_384 image
+                                        uid=22_385 generic
+                                          uid=21_130 StaticText " "
+                                            uid=22_7 InlineTextBox " "
+                                      uid=22_386 ignored
+                                        uid=22_387 ignored
+                                          uid=22_388 ignored
+                                            uid=22_389 generic
+                                              uid=22_390 generic
+                                              uid=22_391 generic
+                                                uid=21_131 StaticText "笔记预览"
+                                                  uid=22_7 InlineTextBox "笔记预览"
+                                              uid=22_392 generic
+                                                uid=21_132 StaticText "封面预览"
+                                                  uid=22_7 InlineTextBox "封面预览"
+                                          uid=22_393 ignored
+                                            uid=22_394 generic
+                                              uid=22_395 generic
+                                                uid=22_396 ignored
+                                                uid=22_397 generic
+                                                  uid=21_133 image "头像" url="https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ogmtochg6004a0a72u423d2u892510?imageView2/2/w/80/format/jpg"
+                                                  uid=22_398 ignored
+                                                    uid=21_134 StaticText "李志伟"
+                                                      uid=22_7 InlineTextBox "李志伟"
+                                                uid=22_399 ignored
+                                                  uid=22_400 generic
+                                                    uid=22_401 generic
+                                                      uid=22_402 generic
+                                                        uid=22_403 generic
+                                                          uid=22_404 generic
+                                                            uid=22_405 ignored
+                                                              uid=22_406 ignored
+                                                              uid=22_407 generic
+                                                                uid=22_408 generic
+                                                          uid=22_409 generic
+                                                            uid=22_410 ignored
+                                                              uid=22_411 ignored
+                                                              uid=22_412 generic
+                                                                uid=22_413 generic
+                                                          uid=22_414 generic
+                                                            uid=22_415 ignored
+                                                              uid=22_416 ignored
+                                                              uid=22_417 generic
+                                                                uid=22_418 generic
+                                                          uid=22_419 generic
+                                                            uid=22_420 ignored
+                                                              uid=22_421 ignored
+                                                              uid=22_422 generic
+                                                                uid=22_423 generic
+                                                          uid=22_424 generic
+                                                            uid=22_425 ignored
+                                                              uid=22_426 ignored
+                                                              uid=22_427 generic
+                                                                uid=22_428 generic
+                                                        uid=22_429 generic
+                                                          uid=22_430 generic
+                                                          uid=22_431 generic
+                                                          uid=22_432 generic
+                                                          uid=22_433 generic
+                                                          uid=22_434 generic
+                                                      uid=22_435 ignored
+                                                        uid=21_135 StaticText "1/5"
+                                                          uid=22_7 InlineTextBox "1/5"
+                                                    uid=22_436 generic
+                                                      uid=21_136 StaticText "非程序员 Claude Code 用户必看！怎么用Git"
+                                                        uid=22_7 InlineTextBox "非程序员 Claude Code 用户必看！怎么用"
+                                                        uid=22_7 InlineTextBox "Git"
+                                                    uid=22_437 ignored
+                                                      uid=22_438 paragraph
+                                                        uid=21_137 StaticText "一个朋友问我：让 Claude 实现了一个工具，调了 6 版想回到第 3 版，但 CC 告诉我「没有版本记录」，怎么办？"
+                                                          uid=22_7 InlineTextBox "一个朋友问我：让 Claude 实现了一个工具，调了 "
+                                                          uid=22_7 InlineTextBox "6 版想回到第 3 版，但 CC 告诉我「没有版本记"
+                                                          uid=22_7 InlineTextBox "录」，怎么办？"
+                                                      uid=22_439 ignored
+                                                      uid=22_440 paragraph
+                                                        uid=21_138 StaticText "这是用 Claude Code 做项目的新手朋友，很容易踩的坑，还有下面这些类似的："
+                                                          uid=22_7 InlineTextBox "这是用 Claude Code 做项目的新手朋友，很容易"
+                                                          uid=22_7 InlineTextBox "踩的坑，还有下面这些类似的："
+                                                      uid=22_441 paragraph
+                                                        uid=21_139 StaticText "1️⃣ Claude Code 生成了 v1/v2/v3 的文件， 一周后分不清哪个是哪个了"
+                                                          uid=22_7 InlineTextBox "1️⃣ Claude Code 生成了 v1/v2/v3 的文件， 一周"
+                                                          uid=22_7 InlineTextBox "后分不清哪个是哪个了"
+                                                      uid=22_442 paragraph
+                                                        uid=21_140 StaticText "2️⃣ CLAUDE.md 改着改着，Claude 行为变怪了，但不知道哪一次改坏的"
+                                                          uid=22_7 InlineTextBox "2️⃣ CLAUDE.md 改着改着，Claude 行为变怪"
+                                                          uid=22_7 InlineTextBox "了，但不知道哪一次改坏的"
+                                                      uid=22_443 paragraph
+                                                        uid=21_141 StaticText "3️⃣ 多人协作，几个人同时更改了一些文件，合并改动简直是灾难"
+                                                          uid=22_7 InlineTextBox "3️⃣ 多人协作，几个人同时更改了一些文件，合并"
+                                                          uid=22_7 InlineTextBox "改动简直是灾难"
+                                                      uid=22_444 paragraph
+                                                        uid=21_142 StaticText "4️⃣ 用 Claude Code 迭代一个月的写作风格，想知道是怎么演进的，但没留过快照"
+                                                          uid=22_7 InlineTextBox "4️⃣ 用 Claude Code 迭代一个月的写作风格，想"
+                                                          uid=22_7 InlineTextBox "知道是怎么演进的，但没留过快照"
+                                                      uid=22_445 paragraph
+                                                        uid=21_143 StaticText "5️⃣ Claude 改了配置我没注意就同意了，几天后才发现有问题，但是不知道它到底改了什么"
+                                                          uid=22_7 InlineTextBox "5️⃣ Claude 改了配置我没注意就同意了，几天后才"
+                                                          uid=22_7 InlineTextBox "发现有问题，但是不知道它到底改了什么"
+                                                      uid=22_446 ignored
+                                                      uid=22_447 paragraph
+                                                        uid=21_144 StaticText "它们的共同点：没有「存档」。"
+                                                          uid=22_7 InlineTextBox "它们的共同点：没有「存档」。"
+                                                      uid=22_448 ignored
+                                                      uid=22_449 paragraph
+                                                        uid=21_145 StaticText "好消息是，在软件工程领域早就有解决方案了 —— Git 就是你的存档键"
+                                                          uid=22_7 InlineTextBox "好消息是，在软件工程领域早就有解决方案了 "
+                                                          uid=22_7 InlineTextBox "—— Git 就是你的存档键"
+                                                      uid=22_450 ignored
+                                                      uid=22_451 paragraph
+                                                        uid=21_146 StaticText "其实这个工具很简单，不是程序员才会用的工具。下面是最基础的 6 个命令："
+                                                          uid=22_7 InlineTextBox "其实这个工具很简单，不是程序员才会用的工具。"
+                                                          uid=22_7 InlineTextBox "下面是最基础的 6 个命令："
+                                                      uid=22_452 paragraph
+                                                        uid=21_147 StaticText "git init → 开启存档（只需要跑一次）"
+                                                          uid=22_7 InlineTextBox "git init → 开启存档（只需要跑一次）"
+                                                      uid=22_453 paragraph
+                                                        uid=21_148 StaticText "git add + commit → 存一个档（改完就存，养成习惯）"
+                                                          uid=22_7 InlineTextBox "git add + commit → 存一个档（改完就存，养成"
+                                                          uid=22_7 InlineTextBox "习惯）"
+                                                      uid=22_454 paragraph
+                                                        uid=21_149 StaticText "git log → 看看存了哪些档（像翻相册）"
+                                                          uid=22_7 InlineTextBox "git log → 看看存了哪些档（像翻相册）"
+                                                      uid=22_455 paragraph
+                                                        uid=21_150 StaticText "git diff → 对比改了什么（Claude 改了啥一目了然）"
+                                                          uid=22_7 InlineTextBox "git diff → 对比改了什么（Claude 改了啥一目了"
+                                                          uid=22_7 InlineTextBox "然）"
+                                                      uid=22_456 paragraph
+                                                        uid=21_151 StaticText "git checkout → 回到之前的版本（后悔药）"
+                                                          uid=22_7 InlineTextBox "git checkout → 回到之前的版本（后悔药）"
+                                                      uid=22_457 paragraph
+                                                        uid=21_152 StaticText "git branch →  开一条新路线试试（不影响主线）"
+                                                          uid=22_7 InlineTextBox "git branch →  开一条新路线试试（不影响主线）"
+                                                      uid=22_458 ignored
+                                                      uid=22_459 paragraph
+                                                        uid=21_153 StaticText "你甚至可以直接让 Claude Code 执行它们。"
+                                                          uid=22_7 InlineTextBox "你甚至可以直接让 Claude Code 执行它们。"
+                                                      uid=22_460 ignored
+                                                      uid=22_461 paragraph
+                                                        uid=21_154 StaticText "💡 在 CLAUDE.md 加一条规则，Claude 就能自动帮你存档👇"
+                                                          uid=22_7 InlineTextBox "💡 在 CLAUDE.md 加一条规则，Claude 就能自"
+                                                          uid=22_7 InlineTextBox "动帮你存档👇"
+                                                      uid=22_462 paragraph
+                                                        uid=21_155 StaticText "「项目使用 git 管理，每次完成修改后自动 commit。」"
+                                                          uid=22_7 InlineTextBox "「项目使用 git 管理，每次完成修改后自动 comm"
+                                                          uid=22_7 InlineTextBox "it。」"
+                                                      uid=22_463 ignored
+                                                      uid=22_464 paragraph
+                                                        uid=21_156 StaticText "最近，Claude Code 内置了 git worktree，比 git branch 更好用，感兴趣的可以找 Claude 了解。"
+                                                          uid=22_7 InlineTextBox "最近，Claude Code 内置了 git worktree，比 git "
+                                                          uid=22_7 InlineTextBox "branch 更好用，感兴趣的可以找 Claude 了解。"
+                                                      uid=22_465 ignored
+                                                      uid=22_466 paragraph
+                                                        uid=21_157 StaticText "在使用 Claude Code 初期你踩过哪个坑？评论区见👇"
+                                                          uid=22_7 InlineTextBox "在使用 Claude Code 初期你踩过哪个坑？评论区"
+                                                          uid=22_7 InlineTextBox "见👇"
+                                                      uid=22_467 paragraph
+                                                        uid=21_158 StaticText "#vibecoding"
+                                                          uid=22_7 InlineTextBox "#vibecoding"
+                                                        uid=21_159 StaticText " "
+                                                          uid=22_7 InlineTextBox " "
+                                                        uid=21_160 StaticText "#vibecoding大赏"
+                                                          uid=22_7 InlineTextBox "#vibecoding大赏"
+                                                        uid=21_161 StaticText " "
+                                                          uid=22_7 InlineTextBox " "
+                                                        uid=21_162 StaticText "#AI工具"
+                                                          uid=22_7 InlineTextBox "#AI工具"
+                                                        uid=21_163 StaticText " "
+                                                          uid=22_7 InlineTextBox " "
+                                                        uid=21_164 StaticText "#文科生转码"
+                                                          uid=22_7 InlineTextBox "#文科生"
+                                                          uid=22_7 InlineTextBox "转码"
+                                                        uid=21_165 StaticText " "
+                                                          uid=22_7 InlineTextBox " "
+                                                        uid=21_166 StaticText "#ClaudeCode"
+                                                          uid=22_7 InlineTextBox "#ClaudeCode"
+                                                        uid=21_167 StaticText " "
+                                                          uid=22_7 InlineTextBox " "
+                                                        uid=21_168 StaticText "#AI编程"
+                                                          uid=22_7 InlineTextBox "#AI编程"
+                                                        uid=21_169 StaticText " "
+                                                          uid=22_7 InlineTextBox " "
+                                                        uid=21_170 StaticText "#转码"
+                                                          uid=22_7 InlineTextBox "#转码"
+                                                    uid=22_468 ignored
+                                                      uid=22_469 ignored
+                                                      uid=22_470 generic
+                                                        uid=22_471 ignored
+                                                          uid=22_472 ignored
+                                                            uid=21_171 StaticText "编辑于 "
+                                                              uid=22_7 InlineTextBox "编辑于 "
+                                                          uid=22_473 ignored
+                                                            uid=21_172 StaticText "刚刚"
+                                                              uid=22_7 InlineTextBox "刚刚"
+                                                          uid=22_474 ignored
+                                                          uid=22_475 ignored
+                                                            uid=22_476 ignored
+                                                              uid=21_173 StaticText "  已声明原创"
+                                                                uid=22_7 InlineTextBox "  已声明原创"
+                                                            uid=22_477 image
+                                                    uid=22_478 generic
+                                                      uid=21_174 image "头像" url="https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ogmtochg6004a0a72u423d2u892510?imageView2/2/w/80/format/jpg"
+                                                    uid=22_479 ignored
+                                              uid=22_480 generic
+                                        uid=22_481 ignored
+                                  uid=22_482 generic
+                                    uid=21_175 button "发布"
+                                      uid=22_483 ignored
+                                        uid=22_484 generic
+                                          uid=22_485 StaticText "发布"
+                                            uid=22_7 InlineTextBox "发布"
+      uid=22_486 ignored
+      uid=22_487 ignored
+      uid=22_488 ignored
+      uid=22_489 ignored
+      uid=22_490 generic
+        uid=22_491 ignored
+        uid=22_492 ignored
+        uid=22_493 ignored
+        uid=22_494 ignored
+        uid=22_495 ignored
+        uid=22_496 ignored
+        uid=22_497 ignored
+        uid=22_498 ignored
+        uid=22_499 ignored
+      uid=22_500 generic
+      uid=22_501 ignored
+      uid=22_502 ignored
