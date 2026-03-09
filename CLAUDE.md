@@ -30,6 +30,10 @@ editory/
 │   ├── my-style.md            # Writing style skill (auto-loaded for all writing tasks)
 │   └── my-style-log.md        # Style iteration log (not loaded during writing)
 ├── my_works/                   # User's articles and drafts
+│   ├── article.md              #   Markdown article
+│   ├── article.assets/         #   Per-article assets (cover, xhs-, illustration-, prompt-)
+│   └── assets/images/          #   Orphaned/shared images
+├── cover-image/                # Global cover image templates and style tests
 ├── my-skills/                  # Custom user skills
 ├── baoyu-skills/               # Third-party skills (baoyu)
 ├── docs/                       # Project documentation files

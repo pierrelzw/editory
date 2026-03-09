@@ -210,8 +210,8 @@ Claude 执行了这条命令：
 
 ```bash
 npx -y bun baoyu-skills/skills/baoyu-image-gen/scripts/main.ts \
-  --promptfiles cover-image/plan-before-coding/prompts/cover.md \
-  --image cover-image/plan-before-coding/cover.png \
+  --promptfiles my_works/plan_before_coding.assets/prompt-cover.md \
+  --image my_works/plan_before_coding.assets/cover.png \
   --provider google --ar 3:4 --quality 2k
 ```
 
@@ -224,9 +224,9 @@ npx -y bun baoyu-skills/skills/baoyu-image-gen/scripts/main.ts \
 ### 输出的文件结构
 
 ```
-cover-image/plan-before-coding/
-├── prompts/cover.md    # 图片生成 prompt（可编辑重跑）
-└── cover.png           # 生成的封面图
+my_works/plan_before_coding.assets/
+├── prompt-cover.md    # 图片生成 prompt（可编辑重跑）
+└── cover.png          # 生成的封面图
 ```
 
 ### 实际效果
@@ -302,21 +302,20 @@ bun image-gen --promptfiles prompts/02-content.md --image 02-content.png --ar 3:
 ### 输出的文件结构
 
 ```
-xhs-images/claude-code-config/
-├── analysis.md                      # 内容分析报告
-├── outline-strategy-a.md            # 策略 A 大纲
-├── outline-strategy-b.md            # 策略 B 大纲
-├── outline-strategy-c.md            # 策略 C 大纲
-├── outline.md                       # 最终选定的大纲
-├── prompts/
-│   ├── 01-cover-config-guide.md     # 每张图的 prompt（可编辑重跑）
-│   ├── 02-content-config-map.md
-│   ├── 03-content-quick-start.md
-│   └── 04-ending-iterate.md
-├── 01-cover-config-guide.png
-├── 02-content-config-map.png
-├── 03-content-quick-start.png
-└── 04-ending-iterate.png
+my_works/claude_code_config_guide.assets/
+├── xhs-analysis.md                          # 内容分析报告
+├── xhs-outline-strategy-a.md                # 策略 A 大纲
+├── xhs-outline-strategy-b.md                # 策略 B 大纲
+├── xhs-outline-strategy-c.md                # 策略 C 大纲
+├── xhs-outline.md                           # 最终选定的大纲
+├── prompt-xhs-01-cover-config-guide.md      # 每张图的 prompt（可编辑重跑）
+├── prompt-xhs-02-content-config-map.md
+├── prompt-xhs-03-content-quick-start.md
+├── prompt-xhs-04-ending-iterate.md
+├── xhs-01-cover-config-guide.png
+├── xhs-02-content-config-map.png
+├── xhs-03-content-quick-start.png
+└── xhs-04-ending-iterate.png
 ```
 
 ## Demo 3：文章插图（baoyu-article-illustrator）
@@ -407,15 +406,14 @@ LABELS: 推荐工作流：每次 AI 修改前后都存档
 ### 输出的文件结构
 
 ```
-illustrations/git-for-ai-users/
-├── outline.md
-├── prompts/
-│   ├── 01-framework-git-concepts.md
-│   ├── 02-flowchart-six-commands.md
-│   └── 03-infographic-workflow.md
-├── 01-framework-git-concepts.png
-├── 02-flowchart-six-commands.png
-└── 03-infographic-workflow.png
+my_works/git_for_ai_agent_users.assets/
+├── illustration-outline.md
+├── prompt-illustration-01-framework-git-concepts.md
+├── prompt-illustration-02-flowchart-six-commands.md
+├── prompt-illustration-03-infographic-workflow.md
+├── illustration-01-framework-git-concepts.png
+├── illustration-02-flowchart-six-commands.png
+└── illustration-03-infographic-workflow.png
 ```
 
 ## 跑完三个 demo 的体感
