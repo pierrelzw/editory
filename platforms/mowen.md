@@ -30,6 +30,16 @@ claude mcp add-json mowen '{"type":"streamable-http","url":"https://open.mowen.c
 #### `UploadViaURL`
 通过 URL 上传图片、音频、PDF 文件。
 
+**注意：** 墨问服务器在国内，无法直接访问 `raw.githubusercontent.com`。需要使用 GitHub 代理包装 URL：
+
+```
+https://ghfast.top/https://raw.githubusercontent.com/user/repo/branch/path/to/file.png
+```
+
+备选代理（如 ghfast.top 不可用）：
+- `https://gh-proxy.com/`
+- `https://mirror.ghproxy.com/`
+
 ### Content Format Conversion
 
 Markdown must be converted to Mowen's paragraph JSON format:

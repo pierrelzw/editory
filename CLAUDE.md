@@ -25,7 +25,8 @@ editory/
 ├── .claude/
 │   ├── commands/
 │   │   ├── publish.md         # /publish skill definition
-│   │   └── iterate-style.md   # /iterate-style skill (update style from user edits)
+│   │   ├── iterate-style.md   # /iterate-style skill (update style from user edits)
+│   │   └── insights.md        # /insights skill (daily report + IM notification)
 │   ├── my-style.md            # Writing style skill (auto-loaded for all writing tasks)
 │   └── my-style-log.md        # Style iteration log (not loaded during writing)
 ├── my_works/                   # User's articles and drafts
@@ -72,6 +73,21 @@ Step 3: Analyze changes — extract style rules
 Step 4: Update .claude/my-style.md — deduplicate, consolidate, check contradictions
 Step 5: Show summary — new rules, reinforced rules, edit rate
 ```
+
+## Daily Insights
+
+```
+User: /insights [--send] [--date YYYY-MM-DD]
+
+Step 1: Work summary — git commits across ~/codes/ repos + cccmemory sessions
+Step 2: Config health check — settings, MCP connectivity, skill count
+Step 3: Content pipeline — drafts in my_works/, pending publishes
+Step 4: Memory & learning — cccmemory health report + stats
+Step 5: Compile concise mobile-friendly report
+Step 6: Deliver — terminal only, or send via Telegram MCP (--send)
+```
+
+Telegram MCP (`telegram-notify-mcp`) provides `send_message`, `send_photo`, `send_document` tools. Configure via `claude mcp add telegram -e TELEGRAM_BOT_TOKEN=<token> -e TELEGRAM_USERNAME=<username> -- npx @parthj/telegram-notify-mcp`.
 
 ## Chrome Session Persistence
 
