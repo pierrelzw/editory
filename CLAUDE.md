@@ -11,11 +11,11 @@ Editory is a Claude Code skill (not a standalone CLI tool). After writing a Mark
 | Platform | Primary Method | Fallback |
 |---|---|---|
 | Mowen | `mowen-mcp-server` (direct MCP) | Chrome DevTools MCP (browser) |
-| Xiaohongshu | `rednote-mcp` (planned, not yet configured) | Chrome DevTools MCP (browser) |
-| WeChat Official Account | Chrome DevTools MCP (browser) | — |
+| Xiaohongshu | Chrome DevTools MCP (browser) | — |
+| WeChat Official Account | `baoyu-post-to-wechat` skill (browser) | Chrome DevTools MCP (manual, see `platforms/wechat.md`) |
 | Twitter/X | Chrome DevTools MCP (browser) | — |
 
-Mowen has a dedicated MCP Server for direct content publishing without browser automation. Xiaohongshu's `rednote-mcp` is planned but not yet configured. WeChat and Twitter use Chrome DevTools MCP for browser automation.
+Mowen has a dedicated MCP Server for direct content publishing without browser automation. Xiaohongshu, WeChat, and Twitter use Chrome DevTools MCP for browser automation.
 
 ## Project Structure
 
@@ -24,7 +24,8 @@ editory/
 ├── CLAUDE.md                  # This file — project context for Claude
 ├── .claude/
 │   ├── commands/
-│   │   ├── publish.md         # /publish skill definition
+│   │   ├── publish.md         # /publish skill definition (multi-platform)
+│   │   ├── post-to-wechat.md  # /post-to-wechat skill (delegates to baoyu-post-to-wechat)
 │   │   ├── iterate-style.md   # /iterate-style skill (update style from user edits)
 │   │   └── insights.md        # /insights skill (daily report + IM notification)
 │   ├── my-style.md            # Writing style skill (auto-loaded for all writing tasks)
@@ -39,7 +40,7 @@ editory/
 ├── docs/                       # Project documentation files
 ├── platforms/                  # Per-platform publishing automation guides
 │   ├── mowen.md               # Mowen: MCP tools + browser fallback
-│   ├── xiaohongshu.md         # Xiaohongshu: MCP tools + browser fallback
+│   ├── xiaohongshu.md         # Xiaohongshu: browser automation via Chrome DevTools
 │   ├── wechat.md              # WeChat Official Account: browser automation
 │   └── twitter.md             # Twitter/X: browser automation
 ├── templates/

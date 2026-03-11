@@ -19,7 +19,7 @@ Claude reads the article, performs AI review and optimization, shows a preview, 
 | Platform | Method | Status |
 |---|---|---|
 | Mowen (mowen.cn) | Direct MCP via `mo-note-mcp-server` | Ready |
-| Xiaohongshu | Direct MCP via `rednote-mcp` | Ready |
+| Xiaohongshu | Browser automation via Chrome DevTools MCP | Ready |
 | WeChat Official Account | Browser automation via Chrome DevTools MCP | Ready |
 | Twitter/X | Browser automation via Chrome DevTools MCP | Ready |
 
@@ -81,14 +81,7 @@ claude mcp add-json mowen '{"type":"streamable-http","url":"https://open.mowen.c
 
 > 详见官方仓库：https://github.com/we-mowen/mo-note-mcp-server
 
-For Xiaohongshu (direct MCP):
-```bash
-# Add to Claude Code MCP settings
-npx rednote-mcp --stdio
-# First-time: obtain cookies via browser login
-```
-
-For WeChat and Twitter (browser automation):
+For Xiaohongshu, WeChat, and Twitter (browser automation):
 ```bash
 # Ensure chrome-devtools MCP is configured in Claude Code
 # Start Chrome with remote debugging:

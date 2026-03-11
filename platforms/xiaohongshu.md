@@ -1,26 +1,10 @@
 # Xiaohongshu (Little Red Book) Publishing Guide
 
-## Primary Method: rednote-mcp (Direct MCP)
+## Method: Chrome DevTools MCP (Browser Automation)
 
-### Installation
-
-```bash
-npx rednote-mcp --stdio
-```
-
-**Authentication:** Cookie file at `~/.mcp/rednote/cookies.json`
-First-time setup requires browser login to obtain cookies.
-
-### MCP Tools
-
-#### `add_note`
-Publish a note on Xiaohongshu.
-
-**Parameters:**
-- `title` — Note title (string)
-- `content` — Body text (string)
-- `images` — List of image file paths (array of strings)
-- `tags` — Hashtags (array of strings)
+### Prerequisites
+- Chrome is running with remote debugging enabled
+- User is logged in to creator.xiaohongshu.com
 
 ### Content Adaptation Rules
 
@@ -57,15 +41,7 @@ When publishing long-form articles to Xiaohongshu, adapt the content:
 
 ---
 
-## Fallback: Chrome DevTools MCP (Browser Automation)
-
-Use this if `rednote-mcp` is not available or not configured.
-
-### Prerequisites
-- Chrome is running with remote debugging enabled
-- User is logged in to creator.xiaohongshu.com
-
-### Steps
+### Publishing Steps
 
 1. **Navigate to publish page**
    ```

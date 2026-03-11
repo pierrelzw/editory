@@ -19,7 +19,7 @@ Claude 会读取文章、进行 AI 审阅与优化、展示预览，然后自动
 | 平台 | 发布方式 | 状态 |
 |---|---|---|
 | 墨问 (mowen.cn) | 通过 `mowen-mcp-server` 直接 MCP 调用 | 可用 |
-| 小红书 | 通过 `rednote-mcp` 直接 MCP 调用 | 可用 |
+| 小红书 | 通过 Chrome DevTools MCP 浏览器自动化 | 可用 |
 | 微信公众号 | 通过 Chrome DevTools MCP 浏览器自动化 | 可用 |
 | Twitter/X | 通过 Chrome DevTools MCP 浏览器自动化 | 可用 |
 
@@ -55,14 +55,7 @@ npx mowen-mcp-server
 # 设置环境变量：MOWEN_API_KEY=your_api_key
 ```
 
-小红书（直接 MCP）：
-```bash
-# 添加到 Claude Code MCP 设置
-npx rednote-mcp --stdio
-# 首次使用：通过浏览器登录获取 cookies
-```
-
-微信公众号和 Twitter（浏览器自动化）：
+小红书、微信公众号和 Twitter（浏览器自动化）：
 ```bash
 # 确保 Claude Code 中已配置 chrome-devtools MCP
 # 启动 Chrome 并开启远程调试：
