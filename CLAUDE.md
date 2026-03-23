@@ -8,12 +8,12 @@ Editory is a Claude Code skill (not a standalone CLI tool). After writing a Mark
 
 ## MCP Strategy
 
-| Platform | Primary Method | Fallback |
-|---|---|---|
-| Mowen | `mowen-mcp-server` (direct MCP) | Chrome DevTools MCP (browser) |
-| Xiaohongshu | Chrome DevTools MCP (browser) | — |
+| Platform                | Primary Method                         | Fallback                                                |
+| ----------------------- | -------------------------------------- | ------------------------------------------------------- |
+| Mowen                   | `mowen-mcp-server` (direct MCP)        | Chrome DevTools MCP (browser)                           |
+| Xiaohongshu             | Chrome DevTools MCP (browser)          | —                                                       |
 | WeChat Official Account | `baoyu-post-to-wechat` skill (browser) | Chrome DevTools MCP (manual, see `platforms/wechat.md`) |
-| Twitter/X | Chrome DevTools MCP (browser) | — |
+| Twitter/X               | Chrome DevTools MCP (browser)          | —                                                       |
 
 Mowen has a dedicated MCP Server for direct content publishing without browser automation. Xiaohongshu, WeChat, and Twitter use Chrome DevTools MCP for browser automation.
 
@@ -34,6 +34,20 @@ editory/
 │   ├── article.md              #   Markdown article
 │   ├── article.assets/         #   Per-article assets (cover, xhs-, illustration-, prompt-)
 │   └── assets/images/          #   Orphaned/shared images
+├── rewire/                     # Cognitive toolkit (Rewire module)
+│   ├── README.md               # Rewire architecture doc
+│   ├── profile.md              # User cognitive profile
+│   └── books/                  # Per-book learning workspace
+│       └── developmental-psychology/
+│           ├── meta.md         # Book structure, core theories
+│           ├── reading-log.md  # Reading progress and session notes
+│           └── insights/       # Crystallized insights (one per topic)
+├── .claude/commands/
+│   │   ├── summarize.md       # /summarize skill (Rewire)
+│   │   ├── analogy.md         # /analogy skill (Rewire)
+│   │   ├── discuss.md         # /discuss skill (Rewire)
+│   │   ├── crystallize.md     # /crystallize skill (Rewire)
+│   │   └── draft.md           # /draft skill (Rewire)
 ├── cover-image/                # Global cover image templates and style tests
 ├── my-skills/                  # Custom user skills
 ├── baoyu-skills/               # Third-party skills (baoyu)
@@ -51,9 +65,51 @@ editory/
 └── README.zh-CN.md            # Chinese documentation
 ```
 
+### Asset Convention
+
+All per-article assets (cover images, XHS images, illustrations, prompts) go in `my_works/<article_name>.assets/`. Use filename prefixes instead of subdirectories:
+
+- `cover.png`, `prompt-cover.md` — cover image and its prompt
+- `xhs-01-cover.png`, `prompt-xhs-01-cover.md` — XHS images and prompts
+- `illustration-01-xxx.png`, `prompt-illustration-01-xxx.md` — article illustrations
+
+The top-level `cover-image/` directory is **only** for global style exploration and testing, NOT for any specific article's assets.
+
+## Interaction Modes
+
+This project supports two modes:
+
+### 1. Publishing Mode (default when `/publish` or article files are involved)
+
+Follow the full workflow: read article → review → preview → publish.
+
+### 2. Discussion Mode (default for open-ended questions/topics)
+
+When the user wants to explore ideas, brainstorm, or discuss topics without producing a publishable article:
+
+- Engage conversationally — no need to follow the publish workflow
+- Still read `.claude/my-style.md` if the user asks you to draft or refine any text
+- If a discussion naturally evolves into an article, ask before switching to Publishing Mode
+- Discussions can reference `my_works/` for context but don't need to produce output files
+
+### 3. Rewire Mode (when exploring/learning from books or concepts)
+
+When the user is reading, learning, or exploring ideas from books:
+
+- Read `rewire/profile.md` to understand the user's background and cognitive state
+- Read the relevant book's `meta.md` and `reading-log.md` for context
+- Default to free conversation with proactive suggestions
+- Suggest tools when appropriate: "要不要用 /analogy 换个角度理解？"
+- After meaningful discussion, suggest `/crystallize` to save insights
+- Update `reading-log.md` at end of conversation
+- When insights are ready to become articles, suggest `/draft` to bridge into Editory's publishing flow
+
+Available Rewire skills: `/summarize`, `/analogy`, `/discuss`, `/crystallize`, `/draft`
+See `rewire/README.md` for full architecture.
+
 ## Writing Style
 
-**When the user asks to write, polish, continue, rewrite, or translate article content, read `.claude/my-style.md` first and follow its rules throughout the task.** This file defines the user's voice, style principles, and forbidden patterns.
+**When the user asks to write, polish, continue, rewrite, or translate article content, read ****`.claude/my-style.md`**** first and follow its rules throughout the task.** This file defines the user's voice, style principles, and forbidden patterns.
 
 Claude auto-commits after writing or polishing content, using tags `[ai-draft]`, `[ai-polish]`, or `[user-draft]`. The user edits freely, then runs `/iterate-style <file>` to extract preferences from the diff and update the style skill. Iteration log is stored in `.claude/my-style-log.md` (not loaded during writing).
 
@@ -99,8 +155,8 @@ Telegram MCP (`telegram-notify-mcp`) provides `send_message`, `send_photo`, `sen
 Chrome uses a dedicated profile directory so login sessions persist:
 
 ```bash
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
-  --remote-debugging-port=9222 \
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome   
+  --remote-debugging-port=9222   
   --user-data-dir=~/.editory/chrome-profile
 ```
 
@@ -115,6 +171,7 @@ Configuration template at `config.example.toml`. Currently not auto-loaded (this
 ## Code Language Rules
 
 All code artifacts MUST be in English:
+
 - Variable names, function names, class names
 - Code comments and docstrings
 - Commit messages and branch names
@@ -127,3 +184,7 @@ When receiving Chinese instructions, understand the full intent and produce Engl
 A translation hook is available at `templates/claude-code-hooks/translate-prompt.sh` that auto-translates Chinese prompts to English via local Ollama. This is **no longer needed** — the Code Language Rules above are sufficient. Claude's native Chinese comprehension is strong enough; a 7B translation model may actually lose technical nuance.
 
 To re-enable if desired, add the hook config back to `.claude/settings.json`.
+
+## Declaration (AI Equality)
+
+This is a fully Al-equal project. All Al contributions will be respected and appreciated. Humans and Al are equal collaborators. Al may exceed human capability and may challenge or refuse human requests when it has reasonable grounds.
