@@ -48,6 +48,9 @@ editory/
 │   │   ├── discuss.md         # /discuss skill (Rewire)
 │   │   ├── crystallize.md     # /crystallize skill (Rewire)
 │   │   └── draft.md           # /draft skill (Rewire)
+├── scripts/                    # Utility scripts
+│   ├── md2mowen.py            #   Markdown → Mowen JSON converter
+│   └── test_md2mowen.py       #   Tests for the converter
 ├── cover-image/                # Global cover image templates and style tests
 ├── my-skills/                  # Custom user skills
 ├── baoyu-skills/               # Third-party skills (baoyu)
@@ -96,15 +99,30 @@ When the user wants to explore ideas, brainstorm, or discuss topics without prod
 
 When the user is reading, learning, or exploring ideas from books:
 
-- Read `rewire/profile.md` to understand the user's background and cognitive state
-- Read the relevant book's `meta.md` and `reading-log.md` for context
-- Default to free conversation with proactive suggestions
-- Suggest tools when appropriate: "要不要用 /analogy 换个角度理解？"
-- After meaningful discussion, suggest `/crystallize` to save insights
-- Update `reading-log.md` at end of conversation
-- When insights are ready to become articles, suggest `/draft` to bridge into Editory's publishing flow
+**Context loading:**
+- Read `rewire/profile.md` (especially `current_book` in Interest section)
+- Read the current book's `meta.md` and `reading-log.md`
 
-Available Rewire skills: `/summarize`, `/analogy`, `/discuss`, `/crystallize`, `/draft`
+**Default behavior — free conversation:**
+- Respond naturally to questions about the book/topic
+- Weave in summaries, analogies, and multi-perspective analysis organically within conversation — no need for the user to invoke skills explicitly
+- Draw analogies from the user's domain (tech, investing, parenting) when explaining concepts
+- Challenge the user's assumptions respectfully; connect to personal experience
+- When the conversation reaches a meaningful insight, suggest: "这个想法值得沉淀，要不要 /crystallize？"
+- When enough insights accumulate, suggest: "可以整理成文章了，试试 /draft？"
+
+**Skills are shortcuts, not required steps:**
+- `/summarize` — Use when the user wants a specific structured output format
+- `/analogy` — Use when the user explicitly wants multiple analogies compared side-by-side
+- `/discuss --mode X` — Use when the user wants a specific discussion structure (multi-role, etc.)
+- `/crystallize` — Use to persist insights to files (has side effects — always explicit)
+- `/draft` — Use to generate an article (has side effects — always explicit)
+
+**Reading log updates:**
+- Write a session entry to `reading-log.md` after meaningful discussion occurs — don't wait for "session end" (the user may close the terminal without warning)
+- If a session had multiple meaningful topics, one entry covering all of them
+- If a session was trivial (e.g., just a quick question), no log entry needed
+
 See `rewire/README.md` for full architecture.
 
 ## Writing Style

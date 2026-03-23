@@ -42,33 +42,66 @@ https://ghfast.top/https://raw.githubusercontent.com/user/repo/branch/path/to/fi
 
 ### Content Format Conversion
 
-Markdown must be converted to Mowen's paragraph JSON format:
+Mowen uses a ProseMirror/TipTap JSON format. Use the converter script to transform Markdown:
 
-| Markdown | Mowen JSON |
-|---|---|
-| Plain paragraph | `{"type": "text", "texts": [{"text": "..."}]}` |
-| **Bold text** | `{"text": "...", "bold": true}` |
-| > Blockquote | `{"type": "quote", "texts": [...]}` |
-| `![](url)` Image | `{"type": "file", "url": "..."}` |
-| `[text](url)` Link | `{"type": "link", "url": "...", "text": "..."}` |
+```bash
+python3 scripts/md2mowen.py article.md          # compact JSON to stdout
+python3 scripts/md2mowen.py article.md --pretty  # formatted output
+python3 scripts/md2mowen.py -                    # read from stdin
+```
 
-**Conversion rules:**
-1. Split Markdown into blocks (paragraphs, headings, quotes, code blocks, images)
-2. For each block, create the corresponding JSON structure
-3. Within text blocks, parse inline formatting (bold, italic, links, code)
-4. Headings become text paragraphs with bold formatting
-5. Code blocks become text paragraphs with code formatting
+The script handles frontmatter stripping, inline formatting, images (with `local` flag for upload workflow), lists, tables, code blocks, and blockquotes.
 
-### Example
+#### JSON Structure
+
+Root node is a `doc` with a `content` array of blocks:
 
 ```json
-[
-  {"type": "text", "texts": [{"text": "Introduction", "bold": true}]},
-  {"type": "text", "texts": [{"text": "This is a paragraph with "}, {"text": "bold text", "bold": true}, {"text": " in it."}]},
-  {"type": "quote", "texts": [{"text": "This is a blockquote."}]},
-  {"type": "file", "url": "https://example.com/image.png"}
-]
+{
+  "type": "doc",
+  "content": [
+    {"type": "paragraph", "content": [
+      {"type": "text", "text": "Normal text "},
+      {"type": "text", "marks": [{"type": "bold"}], "text": "bold"},
+      {"type": "text", "marks": [{"type": "highlight"}], "text": "highlighted"},
+      {"type": "text", "marks": [{"type": "link", "attrs": {"href": "https://..."}}], "text": "link"}
+    ]},
+    {"type": "paragraph"},
+    {"type": "codeblock", "attrs": {"language": "python"}, "content": [
+      {"type": "text", "text": "print('hello')"}
+    ]},
+    {"type": "image", "attrs": {"uuid": "xxx", "align": "center", "alt": "description"}},
+    {"type": "quote", "content": [{"type": "text", "text": "quote content"}]}
+  ]
+}
 ```
+
+**Supported block types:** `paragraph`, `codeblock`, `image`, `quote`, `audio`, `pdf`, `note` (internal link)
+
+**Supported inline marks:** `bold`, `highlight`, `link` (with `attrs.href`)
+
+**Not supported:** `code` mark (renders as plain text with no visual effect — the script preserves backticks instead)
+
+#### Image Handling in Publish Workflow
+
+The script outputs images in an intermediate format with `src` and `local` flag:
+- Local: `{"type": "image", "attrs": {"src": "path/img.png", "local": true, "alt": "..."}}`
+- URL: `{"type": "image", "attrs": {"src": "https://...", "local": false, "alt": "..."}}`
+
+The publish workflow then uploads `local: true` images via `UploadViaURL` and replaces attrs with `{"uuid": "xxx", "align": "center", "alt": "..."}`.
+
+#### Note ID Persistence (Create vs Update)
+
+Articles can store `mowen_note_id` in YAML frontmatter to enable updates instead of duplicate creation:
+
+```yaml
+---
+mowen_note_id: 3thRpsI8EcthpzhpcU5Km
+---
+```
+
+- **Has `mowen_note_id`** → `EditRichNote(note_id, body)` updates the existing note
+- **No `mowen_note_id`** → `CreateRichNote(body, settings)` creates a new note, then the returned ID is written back into the article's frontmatter
 
 ---
 

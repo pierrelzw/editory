@@ -45,12 +45,31 @@ Use AskUserQuestion: "Publish to all platforms", "Publish to selected only", or 
 ### Step 5: Auto-Publish
 For each target platform, read `platforms/<name>.md` for the publishing guide, then:
 
-**A) Mowen / Xiaohongshu (MCP direct):**
-- Try to use the dedicated MCP tools (create_note / add_note) first
-- If MCP server not available, fall back to Chrome DevTools MCP browser automation
+**A) Mowen (MCP direct):**
+1. Run `python3 scripts/md2mowen.py <file>` to get the Mowen JSON
+2. **Handle cover image** — check frontmatter for `mowen_cover_uuid`:
+   - **If present** → insert `{"type": "image", "attrs": {"uuid": "<uuid>", "align": "center"}}` as the first node in doc content (reuse existing UUID, no re-upload needed)
+   - **If absent** but `.assets/cover.png` exists → ensure pushed to GitHub, upload via `UploadViaURL(file_type=1, url=...)`, insert image node at doc top, write returned UUID back to frontmatter as `mowen_cover_uuid`
+3. **Handle inline images** — for any image node with `"local": true` in the JSON:
+   - Ensure pushed to GitHub first (`git push` if needed — UploadViaURL fetches from URL)
+   - Construct GitHub raw URL (use proxy like `ghfast.top` if needed, Mowen server is in China)
+   - Upload via `UploadViaURL(file_type=1, url=...)` to get UUID
+   - Replace image node attrs with `{"uuid": "<returned-uuid>", "align": "center", "alt": "..."}`
+   - If upload fails, skip and warn — do not abort
+4. **Publish or update** — check frontmatter for `mowen_note_id`:
+   - **If present** → call `EditRichNote(note_id, body)` to update the existing note
+   - **If absent** → call `CreateRichNote(body, settings)` to create a new note, then write the returned note ID back into frontmatter as `mowen_note_id`
+5. If MCP server not available, fall back to Chrome DevTools MCP browser automation
 
-**B) WeChat / Twitter (browser automation):**
-- Use Chrome DevTools MCP following the step-by-step guide in platforms/<name>.md
+**A2) Xiaohongshu (browser automation):**
+- Use Chrome DevTools MCP following the step-by-step guide in platforms/xiaohongshu.md
+
+**B) WeChat (delegate to post-to-wechat):**
+- Read and follow `.claude/commands/post-to-wechat.md` with the article file and any relevant arguments (`--skip-review`, `--skip-cover`, `--theme`, `--color`)
+- The post-to-wechat command handles AI review, cover image resolution, and delegates publishing to the baoyu-post-to-wechat skill
+
+**C) Twitter (browser automation):**
+- Use Chrome DevTools MCP following the step-by-step guide in platforms/twitter.md
 - Take screenshot after each major step
 - On error: pause and report to user
 

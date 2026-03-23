@@ -1,3 +1,8 @@
+---
+mowen_note_id: 3thRpsI8EcthpzhpcU5Km
+mowen_cover_uuid: 3-lYehOXzMocZ0JIeWnle-TMP
+---
+
 # Claude Code Tab 太多了怎么办
 
 > 关掉就好。真的。
