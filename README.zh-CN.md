@@ -48,12 +48,13 @@ cp editory/CLAUDE.md your-project/
 
 ### 2. 配置 MCP 服务器
 
-墨问（直接 MCP）：
+墨问（直接 MCP，基于 Streamable HTTP 协议，无需本地环境依赖）：
+
 ```bash
-# 添加到 Claude Code MCP 设置
-npx mowen-mcp-server
-# 设置环境变量：MOWEN_API_KEY=your_api_key
+claude mcp add-json mowen '{"type":"streamable-http","url":"https://open.mowen.cn/api/open/mcp/v1/note?key=YOUR_API_KEY"}'
 ```
+
+API Key 获取方式：在墨问微信小程序中开通会员，然后前往开发者中心获取。
 
 小红书、微信公众号和 Twitter（浏览器自动化）：
 ```bash
@@ -112,6 +113,8 @@ tags: [python, 编程, 技巧]
 platforms: [mowen, xiaohongshu]
 cover: ./cover.png
 type: article  # 或 "short_post"（短文/笔记）
+mowen_note_id: abc123        # 首次发布后自动填入（后续更新而非重复创建）
+mowen_cover_uuid: xyz-TMP    # 封面上传后自动填入（更新时复用）
 ---
 
 在这里写你的文章内容...
@@ -122,16 +125,22 @@ type: article  # 或 "short_post"（短文/笔记）
 ```
 editory/
 ├── CLAUDE.md                  # Claude 项目上下文
-├── skills/
-│   └── publish.md             # /publish 技能定义
+├── .claude/commands/
+│   ├── publish.md             # /publish 技能定义
+│   ├── post-to-wechat.md     # /post-to-wechat 技能
+│   └── iterate-style.md      # /iterate-style 技能
+├── scripts/
+│   ├── md2mowen.py            # Markdown → 墨问 JSON 转换器
+│   └── test_md2mowen.py       # 转换器测试
 ├── platforms/
-│   ├── mowen.md               # 墨问发布指南
-│   ├── xiaohongshu.md         # 小红书发布指南
+│   ├── mowen.md               # 墨问：MCP 工具 + 浏览器备选
+│   ├── xiaohongshu.md         # 小红书：浏览器自动化
 │   ├── wechat.md              # 微信公众号发布指南
 │   └── twitter.md             # Twitter/X 发布指南
 ├── templates/
 │   ├── review-checklist.md    # AI 内容审阅清单
 │   └── platform-styles.md    # 各平台内容风格指南
+├── my_works/                   # 用户文章和草稿
 ├── config.example.toml        # 示例配置文件
 └── README.md                  # 英文文档
 ```

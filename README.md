@@ -138,6 +138,8 @@ tags: [python, programming, tips]
 platforms: [mowen, xiaohongshu]
 cover: ./cover.png
 type: article  # or "short_post"
+mowen_note_id: abc123        # auto-filled after first publish (enables update-in-place)
+mowen_cover_uuid: xyz-TMP    # auto-filled after cover upload (reused on updates)
 ---
 
 Your article content here...
@@ -148,16 +150,22 @@ Your article content here...
 ```
 editory/
 ├── CLAUDE.md                  # Project context for Claude
-├── skills/
-│   └── publish.md             # /publish skill definition
+├── .claude/commands/
+│   ├── publish.md             # /publish skill definition
+│   ├── post-to-wechat.md     # /post-to-wechat skill
+│   └── iterate-style.md      # /iterate-style skill
+├── scripts/
+│   ├── md2mowen.py            # Markdown → Mowen JSON converter
+│   └── test_md2mowen.py       # Tests for the converter
 ├── platforms/
-│   ├── mowen.md               # Mowen publishing guide
-│   ├── xiaohongshu.md         # Xiaohongshu publishing guide
+│   ├── mowen.md               # Mowen: MCP tools + browser fallback
+│   ├── xiaohongshu.md         # Xiaohongshu: browser automation
 │   ├── wechat.md              # WeChat Official Account guide
 │   └── twitter.md             # Twitter/X publishing guide
 ├── templates/
 │   ├── review-checklist.md    # AI content review checklist
 │   └── platform-styles.md    # Platform content style guide
+├── my_works/                   # User's articles and drafts
 ├── config.example.toml        # Example configuration
 └── README.md                  # This file
 ```
