@@ -30,13 +30,19 @@ A paragraph is typically 1-3 sentences. Use blank lines between paragraphs. Long
 
 Write from "I" perspective. Personal experience drives the argument. Don't hide behind "we" or passive voice. When presenting a solution, share the journey — mention what you tried before and why it didn't work, not just the final answer.
 
+包括教程类文章也优先用"我"叙事 —— 分享自己的经历和做法，让读者自然代入，而不是用"你"指导读者。"你"适合用在结尾反问、对话引用等互动场景。
+
 Good:
 > 我一直没想着要买房，也因此错过了北京的房价高峰。
 
 > 一开始我采用的是软链接的方式，但是每次打开 AGENTS.md 看到首行是 CLAUDE.md，我就不太得劲。今天简单问了一下 AI，找到了一个干净的方案。
 
+> 每个没关的 Tab，本质上是一个我对自己的微小承诺："我会回来处理的。"
+
 Bad:
 > 许多年轻人在面对高房价时选择了观望。
+
+> 每个没关的 Tab，本质上是一个你对自己的微小承诺。
 
 ### 4. Strong opinions, clear stance
 
@@ -89,9 +95,13 @@ Good:
 Bad:
 > 综上所述，写作风格的培养是一个长期的过程。
 
-### 8. Tutorials: give concrete links and images, don't make readers search
+### 8. Tutorials: three principles
 
-When writing tutorials or how-to content, provide exact links, screenshots, and step-by-step details. Never say "search for X" when you can give the URL directly.
+1. **Reader perspective first** — organize by the reader's mental path, not the author's knowledge structure. "How do I get it running" comes before "how does it work internally."
+2. **Every step is verifiable** — after each step, the reader must be able to confirm success or failure. No command without expected output; no instruction without specifying where to run it.
+3. **One place, one thing** — dependencies listed upfront, troubleshooting separated from instructions, background knowledge in its own section. Don't interleave explanations into action steps.
+
+Specific: provide exact links, screenshots, and step-by-step details. Never say "search for X" when you can give the URL directly.
 
 Good:
 > 安装和使用参考[教程](https://portal.shadowsocks.au/...)
@@ -163,7 +173,7 @@ Expressions and patterns to never use:
 
 **AI-smell expressions:**
 - "作为一名 XX 领域的从业者/老兵"
-- "不得不说/说实话/有一说一" as openers
+- "不得不说/说实话/有一说一/事实上" as openers
 - "非常重要的、极其关键的、至关重要的" (empty emphasis stacking)
 - "然而，需要指出的是……"
 
