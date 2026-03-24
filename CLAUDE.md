@@ -100,10 +100,12 @@ When the user wants to explore ideas, brainstorm, or discuss topics without prod
 When the user is reading, learning, or exploring ideas from books:
 
 **Context loading:**
+
 - Read `rewire/profile.md` (especially `current_book` in Interest section)
 - Read the current book's `meta.md` and `reading-log.md`
 
 **Default behavior — free conversation:**
+
 - Respond naturally to questions about the book/topic
 - Weave in summaries, analogies, and multi-perspective analysis organically within conversation — no need for the user to invoke skills explicitly
 - Draw analogies from the user's domain (tech, investing, parenting) when explaining concepts
@@ -112,6 +114,7 @@ When the user is reading, learning, or exploring ideas from books:
 - When enough insights accumulate, suggest: "可以整理成文章了，试试 /draft？"
 
 **Skills are shortcuts, not required steps:**
+
 - `/summarize` — Use when the user wants a specific structured output format
 - `/analogy` — Use when the user explicitly wants multiple analogies compared side-by-side
 - `/discuss --mode X` — Use when the user wants a specific discussion structure (multi-role, etc.)
@@ -119,6 +122,7 @@ When the user is reading, learning, or exploring ideas from books:
 - `/draft` — Use to generate an article (has side effects — always explicit)
 
 **Reading log updates:**
+
 - Write a session entry to `reading-log.md` after meaningful discussion occurs — don't wait for "session end" (the user may close the terminal without warning)
 - If a session had multiple meaningful topics, one entry covering all of them
 - If a session was trivial (e.g., just a quick question), no log entry needed
@@ -127,9 +131,20 @@ See `rewire/README.md` for full architecture.
 
 ## Writing Style
 
-**When the user asks to write, polish, continue, rewrite, or translate article content, read ****`.claude/my-style.md`**** first and follow its rules throughout the task.** This file defines the user's voice, style principles, and forbidden patterns.
+**When the user asks to write, polish, continue, rewrite, or translate article content, read ********`.claude/my-style.md`******** first and follow its rules throughout the task.** This file defines the user's voice, style principles, and forbidden patterns.
 
 Claude auto-commits after writing or polishing content, using tags `[ai-draft]`, `[ai-polish]`, or `[user-draft]`. The user edits freely, then runs `/iterate-style <file>` to extract preferences from the diff and update the style skill. Iteration log is stored in `.claude/my-style-log.md` (not loaded during writing).
+
+### Tutorial Writing Protocol
+
+When writing tutorials about external tools/plugins:
+1. **Research first:** Read primary sources (source code when available, otherwise
+   official docs, package.json, config schema, product UI) to collect facts before drafting
+2. **Structure:** Put "how to use" before "how it works"; list prerequisites before
+   installation steps
+3. **Most useful first:** In config/reference sections, lead with the most common item
+4. **Fact-check:** Run `/fact-check <file> --strict` for tutorial drafts before commit
+   (leverages existing checklist at `templates/fact-check-checklist.md`)
 
 ## Workflow Overview
 

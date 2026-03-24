@@ -137,6 +137,15 @@ Good:
 Bad:
 > 千万不要贪便宜买低价礼品卡！
 
+### 11. Tutorials: verify facts from primary sources
+
+When writing tutorials about tools/plugins/frameworks:
+- Verify counts, defaults, commands, and API signatures from primary sources
+  (priority: local source code → official docs → product UI → release notes)
+- Never write specific counts from memory — count from source
+- Flag known bugs/gotchas with workarounds
+- Distinguish where commands run (terminal vs in-tool) when it matters
+
 ## Formatting Habits
 
 - Use `**bold**` for key takeaways, not headings
