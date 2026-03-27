@@ -1,8 +1,10 @@
 # WeChat Official Account Publishing Guide
 
+> **Legacy Reference:** This document is kept for debugging and troubleshooting. For normal publishing, use `/post-to-wechat` which delegates to the `baoyu-post-to-wechat` skill with battle-tested browser automation.
+
 ## Method: Chrome DevTools MCP (Browser Automation)
 
-No dedicated MCP Server available. Publishing is done through browser automation of the WeChat Official Account platform (mp.weixin.qq.com).
+No dedicated MCP Server available. The primary publishing method now uses the `baoyu-post-to-wechat` skill (via `/post-to-wechat`), which handles Markdown→WeChat HTML conversion, theme styling, and browser automation internally. The manual steps below are retained as reference for debugging.
 
 ### Prerequisites
 - Chrome is running with remote debugging enabled
