@@ -55,6 +55,7 @@ def _parse_inline_tokens(tokens: list) -> list:
             marks_stack[:] = [m for m in marks_stack if m["type"] != "bold"]
 
         elif token.type == "em_open":
+            # Mowen has no italic mark; map to bold as closest equivalent
             marks_stack.append({"type": "bold"})
 
         elif token.type == "em_close":
@@ -346,11 +347,19 @@ def convert(markdown_text: str) -> dict:
 
         i += 1
 
-    # Insert empty paragraphs between blocks for spacing
+    # Insert empty paragraphs between blocks for spacing,
+    # but not before/after quote blocks (cover image follows quote directly)
     if blocks:
         spaced = [blocks[0]]
+        after_quote = blocks[0].get("type") == "quote"
         for b in blocks[1:]:
-            spaced.append({"type": "paragraph"})
+            is_empty = b.get("type") == "paragraph" and "content" not in b
+            # Skip empty paragraphs immediately after a quote (e.g. from hr)
+            if after_quote and is_empty:
+                continue
+            after_quote = b.get("type") == "quote"
+            if spaced[-1].get("type") != "quote" and b.get("type") != "quote":
+                spaced.append({"type": "paragraph"})
             spaced.append(b)
         blocks = spaced
 
