@@ -54,7 +54,12 @@ Step 2: POST {endpoint from form}
 - Rate: 1 req/sec, 200 files/day
 - `fileType` enum: `1` = image, `2` = audio, `3` = pdf
 
-**Script:** `python3 scripts/upload_to_mowen.py <file>` wraps both steps and prints the UUID.
+**Script:** `python3 scripts/upload_to_mowen.py <file>` wraps both steps and prints JSON with `uuid`, `fileName`, `fileType`.
+
+**API Key:** The script reads `MOWEN_API_KEY` from the environment. Set it alongside the MCP config:
+```bash
+export MOWEN_API_KEY=your_api_key  # same key used in the MCP server URL
+```
 
 #### URL Upload (Fallback) — `UploadViaURL` MCP Tool
 
@@ -118,7 +123,7 @@ The script outputs images in an intermediate format with `src` and `local` flag:
 - Local: `{"type": "image", "attrs": {"src": "path/img.png", "local": true, "alt": "..."}}`
 - URL: `{"type": "image", "attrs": {"src": "https://...", "local": false, "alt": "..."}}`
 
-The publish workflow then uploads `local: true` images via `UploadViaURL` and replaces attrs with `{"uuid": "xxx", "align": "center", "alt": "..."}`.
+The publish workflow then uploads `local: true` images via `scripts/upload_to_mowen.py` (preferred) or `UploadViaURL` MCP tool (fallback) and replaces attrs with `{"uuid": "xxx", "align": "center", "alt": "..."}`.
 
 #### Note ID Persistence (Create vs Update)
 
