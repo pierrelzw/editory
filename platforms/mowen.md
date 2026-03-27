@@ -27,8 +27,38 @@ claude mcp add-json mowen '{"type":"streamable-http","url":"https://open.mowen.c
 #### `ChangeNoteSettings`
 设置笔记公开/私密权限。
 
-#### `UploadViaURL`
-通过 URL 上传图片、音频、PDF 文件。
+### File Upload
+
+Two methods are available. Prefer local file upload; fall back to URL upload when the file is already at a public URL.
+
+#### Local File Upload (Recommended)
+
+Two-step process via REST API — works for any local file without needing a public URL.
+
+```
+Step 1: POST https://open.mowen.cn/api/open/api/v1/upload/prepare
+  Headers: Authorization: Bearer {API-KEY}
+  Body: {"fileType": 1, "fileName": "cover.png"}
+  Returns: form object with OSS credentials (key, policy, callback, x-oss-signature, etc.)
+
+Step 2: POST {endpoint from form}
+  Content-Type: multipart/form-data
+  Body: all form fields from Step 1 + file binary
+  Returns: upload result with UUID
+```
+
+**Limits:**
+- Images: <50 MB (jpeg/png/gif/webp)
+- Audio: <200 MB (mpeg/mp4/m4a)
+- PDF: <100 MB
+- Rate: 1 req/sec, 200 files/day
+- `fileType` enum: `1` = image, `2` = audio, `3` = pdf
+
+**Script:** `python3 scripts/upload_to_mowen.py <file>` wraps both steps and prints the UUID.
+
+#### URL Upload (Fallback) — `UploadViaURL` MCP Tool
+
+Upload images, audio, or PDF files that are already at a **public URL**. Useful when files are hosted on GitHub or other CDNs.
 
 **注意：** 墨问服务器在国内，无法直接访问 `raw.githubusercontent.com`。需要使用 GitHub 代理包装 URL：
 
@@ -102,6 +132,36 @@ mowen_note_id: 3thRpsI8EcthpzhpcU5Km
 
 - **Has `mowen_note_id`** → `EditRichNote(note_id, body)` updates the existing note
 - **No `mowen_note_id`** → `CreateRichNote(body, settings)` creates a new note, then the returned ID is written back into the article's frontmatter
+
+#### Cover Image Handling
+
+**Rule:** The cover image is the **first image node in the body array**. There is no separate cover API field.
+
+**Image node format:**
+```json
+{"type": "image", "attrs": {"uuid": "<cover_uuid>", "align": "center"}}
+```
+
+**Cover lifecycle:**
+
+| Scenario | Steps |
+|----------|-------|
+| **First publish** (CreateRichNote) | Upload cover file → get UUID → write `mowen_cover_uuid` to article frontmatter → insert image node in body → CreateRichNote |
+| **Subsequent updates** (EditRichNote) | Read `mowen_cover_uuid` from frontmatter → insert image node in body → EditRichNote |
+
+**Body structure with cover:**
+
+With quote block:
+```
+[title_paragraph, quote, cover_image, first_body_paragraph, ...]
+```
+
+Without quote block:
+```
+[title_paragraph, cover_image, first_body_paragraph, ...]
+```
+
+**Responsibility split:** `md2mowen.py` outputs body text only (no cover). The publish workflow reads cover from the article's `.assets/` directory, uploads it, and inserts the image node at the correct position before calling CreateRichNote / EditRichNote.
 
 ---
 
