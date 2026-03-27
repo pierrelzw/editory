@@ -351,7 +351,7 @@ def convert(markdown_text: str) -> dict:
     if blocks:
         spaced = [blocks[0]]
         for b in blocks[1:]:
-            if spaced[-1].get("type") != "quote":
+            if spaced[-1].get("type") != "quote" and b.get("type") != "quote":
                 spaced.append({"type": "paragraph"})
             spaced.append(b)
         blocks = spaced
