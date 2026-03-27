@@ -348,10 +348,16 @@ def convert(markdown_text: str) -> dict:
         i += 1
 
     # Insert empty paragraphs between blocks for spacing,
-    # but not after quote blocks (cover image follows quote directly)
+    # but not before/after quote blocks (cover image follows quote directly)
     if blocks:
         spaced = [blocks[0]]
+        after_quote = blocks[0].get("type") == "quote"
         for b in blocks[1:]:
+            is_empty = b.get("type") == "paragraph" and "content" not in b
+            # Skip empty paragraphs immediately after a quote (e.g. from hr)
+            if after_quote and is_empty:
+                continue
+            after_quote = b.get("type") == "quote"
             if spaced[-1].get("type") != "quote" and b.get("type") != "quote":
                 spaced.append({"type": "paragraph"})
             spaced.append(b)
