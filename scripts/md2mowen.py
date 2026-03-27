@@ -55,6 +55,7 @@ def _parse_inline_tokens(tokens: list) -> list:
             marks_stack[:] = [m for m in marks_stack if m["type"] != "bold"]
 
         elif token.type == "em_open":
+            # Mowen has no italic mark; map to bold as closest equivalent
             marks_stack.append({"type": "bold"})
 
         elif token.type == "em_close":

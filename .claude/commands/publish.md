@@ -47,15 +47,12 @@ For each target platform, read `platforms/<name>.md` for the publishing guide, t
 
 **A) Mowen (MCP direct):**
 1. Run `python3 scripts/md2mowen.py <file>` to get the Mowen JSON
-2. **Upload images** — requires `MOWEN_API_KEY` env var (same key as in MCP URL). For any image node with `"local": true` in the JSON:
-   - Run `python3 scripts/upload_to_mowen.py <image_path>` to upload and get UUID (returns JSON with `uuid` field)
-   - Replace image node attrs with `{"uuid": "<returned-uuid>", "align": "center", "alt": "..."}`
+2. **Upload all images** — requires `MOWEN_API_KEY` env var (same key as in MCP URL):
+   - **Cover image:** check frontmatter for `mowen_cover_uuid`. If absent, resolve cover path (frontmatter `cover` field first, then `<article>.assets/cover.png`), upload via `scripts/upload_to_mowen.py`, write returned UUID to frontmatter as `mowen_cover_uuid`
+   - **Inline images:** for any image node with `"local": true` in the JSON, upload via `scripts/upload_to_mowen.py` and replace attrs with `{"uuid": "<returned-uuid>", "align": "center", "alt": "..."}`
    - If local upload fails, fall back to `UploadViaURL` MCP tool (requires public URL + proxy for GitHub)
    - If upload fails entirely, skip and warn — do not abort
-3. **Insert cover image** — check frontmatter for `mowen_cover_uuid`:
-   - **If present** → insert `{"type": "image", "attrs": {"uuid": "<uuid>", "align": "center"}}` into body (reuse existing UUID)
-   - **If absent** → resolve cover image path: check frontmatter `cover` field first, then fall back to `<article>.assets/cover.png`. Upload via `scripts/upload_to_mowen.py`, insert image node, write returned UUID back to frontmatter as `mowen_cover_uuid`
-   - Cover position: directly after title paragraph (or after quote if present). See `platforms/mowen.md` for body structure.
+3. **Insert cover image into body** — using `mowen_cover_uuid` (existing or just uploaded), insert `{"type": "image", "attrs": {"uuid": "<uuid>", "align": "center"}}` directly after title (or after quote if present). See `platforms/mowen.md` for body structure.
 4. **Publish or update** — check frontmatter for `mowen_note_id`:
    - **If present** → call `EditRichNote(note_id, body)` to update the existing note
    - **If absent** → call `CreateRichNote(body, settings)` to create a new note, then write the returned note ID back into frontmatter as `mowen_note_id`

@@ -29,7 +29,7 @@ EXT_TO_FILETYPE = {
     ".webp": 1,
     ".mp3": 2,
     ".m4a": 2,
-    ".mp4": 2,
+    ".mp4a": 2,  # audio/mp4a-latm
     ".pdf": 3,
 }
 

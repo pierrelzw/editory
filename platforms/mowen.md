@@ -27,6 +27,9 @@ claude mcp add-json mowen '{"type":"streamable-http","url":"https://open.mowen.c
 #### `ChangeNoteSettings`
 设置笔记公开/私密权限。
 
+#### `UploadViaURL`
+通过公网 URL 上传图片、音频、PDF 文件（详见下方 File Upload fallback 部分）。
+
 ### File Upload
 
 Two methods are available. Prefer local file upload; fall back to URL upload when the file is already at a public URL.
